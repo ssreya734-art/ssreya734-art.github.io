@@ -341,6 +341,7 @@ nav ul li a:hover{
 }
 
 .project-card{
+    flex: 0 1 350px;
     padding: 25px;
     border-radius: 15px;
     background: #1E293B;
