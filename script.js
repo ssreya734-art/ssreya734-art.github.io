@@ -58,3 +58,82 @@ document.querySelectorAll("#nav-links a").forEach(link => {
     });
 
 });
+
+// Active Navigation
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>300){
+
+        topBtn.style.display="block";
+
+    }else{
+
+        topBtn.style.display="none";
+
+    }
+
+});
+
+topBtn.addEventListener("click",()=>{
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
+
+const text = "MCA Student | Aspiring Full Stack Developer";
+
+let i = 0;
+
+function typeWriter(){
+
+    if(i < text.length){
+
+        document.getElementById("typing").innerHTML += text.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter,70);
+
+    }
+
+}
+
+typeWriter();

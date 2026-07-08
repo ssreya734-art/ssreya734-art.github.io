@@ -73,27 +73,54 @@ nav{
 }
 
 nav ul{
-    display:flex;
-    align-items:center;
-    list-style:none;
-    gap:35px;
-    margin:0;
-    padding:0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li{
-    list-style:none;
+    list-style: none;
 }
 
 nav ul li a{
-    text-decoration:none;
-    color:white;
-    font-weight:500;
-    transition:.3s;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color .3s;
 }
 
+/* Underline */
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #38BDF8;
+    transition: width .3s;
+}
+
+/* Hover */
 nav ul li a:hover{
-    color:#38BDF8;
+    color: #38BDF8;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Active link */
+nav ul li a.active{
+    color: #38BDF8;
+}
+
+nav ul li a.active::after{
+    width: 100%;
 }
 /* ===========================
    Hero Section
@@ -277,6 +304,7 @@ body.light-mode .btn2:hover{
 .education-card:hover{
 
     transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
 
 }
 
@@ -340,7 +368,7 @@ body.light-mode .btn2:hover{
 
 .skill-card:hover{
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(56,189,248,.35);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
 }
 
 /* ===========================
@@ -382,8 +410,7 @@ body.light-mode .btn2:hover{
 .project-card:hover{
 
     transform:translateY(-12px);
-
-    box-shadow:0 10px 30px rgba(56,189,248,.3);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
 
 }
 
@@ -471,6 +498,7 @@ body.light-mode .btn2:hover{
 .certificate-card:hover{
 
     transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
 
 }
 
@@ -539,6 +567,7 @@ body.light-mode .btn2:hover{
 
 .experience-card:hover{
     transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
 }
 
 .experience-card h3{
@@ -717,20 +746,17 @@ footer{
 /* ===========================
    Scroll Animation
 =========================== */
-
 .hidden{
 
     opacity:0;
-    transform:translateY(60px);
-    transition:all 1s ease;
+    transform:translateY(50px);
+    transition:1s;
 
 }
 
 .show{
-
     opacity:1;
     transform:translateY(0);
-
 }
 /* ===========================
    Mobile Responsive Design
@@ -873,4 +899,41 @@ footer{
 
 .light-mode .footer-icons a:hover{
     color:#0EA5E9;
+}
+#topBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#38BDF8;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    transform:scale(1.1);
+
 }
