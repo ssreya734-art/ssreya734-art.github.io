@@ -346,13 +346,10 @@ nav ul li a:hover{
 }
 
 .project-card{
-
-    width:340px;
-    background:#1E293B;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
-
+    padding: 25px;
+    border-radius: 15px;
+    background: #1E293B;
+    transition: 0.3s;
 }
 
 .project-card:hover{
@@ -741,7 +738,7 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
-    
+
    /* Home Section */
 
 #home{
