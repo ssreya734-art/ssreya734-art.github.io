@@ -54,8 +54,10 @@ header{
 }
 
 #theme-toggle{
-    padding:8px 12px;
-    font-size:16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 22px;
 }
 
 nav{
@@ -122,6 +124,17 @@ nav ul li a:hover{
 .hero-text h3{
     font-size:28px;
     margin:20px 0;
+}
+/* Light Mode - Contact Button */
+body.light-mode .btn2{
+    color: #0F172A;
+    border: 2px solid #38BDF8;
+    background: transparent;
+}
+
+body.light-mode .btn2:hover{
+    background: #38BDF8;
+    color: white;
 }
 
 .intro{
