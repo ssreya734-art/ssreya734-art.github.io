@@ -237,7 +237,7 @@ nav ul li a:hover{
     background:#1E293B;
     padding:30px;
     border-radius:15px;
-    width:450px;
+    width:380px;
     transition:.3s;
 
 }
@@ -721,5 +721,74 @@ footer{
 
     opacity:1;
     transform:translateY(0);
+
+}
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+    #home{
+
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:50px;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+        margin-bottom:30px;
+
+    }
+
+    .hero-image img{
+
+        width:220px;
+
+    }
+
+    .education-container,
+    .projects-container,
+    .skills-container,
+    .experience-container,
+    .contact-container{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .education-card,
+    .project-card,
+    .experience-card,
+    .certificate-card{
+
+        width:100%;
+
+    }
 
 }
