@@ -90,34 +90,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY>300){
-
-        topBtn.style.display="block";
-
-    }else{
-
-        topBtn.style.display="none";
-
-    }
-
-});
-
-topBtn.addEventListener("click",()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-});
-
 const text = "MCA Student | Aspiring Full Stack Developer";
 
 let i = 0;
@@ -137,3 +109,24 @@ function typeWriter(){
 }
 
 typeWriter();
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
