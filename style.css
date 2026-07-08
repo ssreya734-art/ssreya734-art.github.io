@@ -90,7 +90,7 @@ nav ul li a:hover{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 8%;
+    padding: 70px 8%;
 }
 
 .hero-text{
@@ -171,11 +171,11 @@ nav ul li a:hover{
 }
 
 .hero-image img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #38BDF8;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38BDF8;
 }
 /* ===========================
    About Section
@@ -808,10 +808,10 @@ footer{
         justify-content:center;
     }
 
-    .hero-image img{
-        width:200px;
-        height:200px;
-        object-fit:cover;
+   .hero-image img{
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
     }
 
     .buttons{
