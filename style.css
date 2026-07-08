@@ -509,3 +509,88 @@ nav ul li a:hover{
     margin-bottom:15px;
 
 }
+/* ===========================
+   Contact Section
+=========================== */
+
+#contact{
+    padding:100px 8%;
+}
+
+#contact h2{
+    text-align:center;
+    font-size:40px;
+    color:#38BDF8;
+    margin-bottom:50px;
+}
+
+.contact-container{
+
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+
+}
+
+.contact-info{
+
+    flex:1;
+    min-width:300px;
+
+}
+
+.contact-info h3{
+
+    color:#38BDF8;
+    margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+    margin-bottom:15px;
+    color:#d1d5db;
+    font-size:18px;
+
+}
+
+.contact-form{
+
+    flex:1;
+    min-width:300px;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    margin-bottom:20px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+
+}
+
+.contact-form button{
+
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#38BDF8;
+    color:#0F172A;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:white;
+
+}
