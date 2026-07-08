@@ -630,3 +630,96 @@ footer{
     margin-bottom:10px;
 
 }
+/* ===========================
+   Theme Toggle Button
+=========================== */
+
+#theme-toggle{
+
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#38BDF8;
+    color:#0F172A;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+#theme-toggle:hover{
+
+    transform:scale(1.1);
+
+}
+/* ===========================
+   Light Mode
+=========================== */
+
+.light-mode{
+
+    background:#F8FAFC;
+    color:#111827;
+
+}
+
+.light-mode header{
+
+    background:white;
+
+}
+
+.light-mode footer{
+
+    background:white;
+
+}
+
+.light-mode .education-card,
+.light-mode .project-card,
+.light-mode .certificate-card,
+.light-mode .experience-card,
+.light-mode .about-content{
+
+    background:#E2E8F0;
+    color:#111827;
+
+}
+
+.light-mode p{
+
+    color:#374151;
+
+}
+
+.light-mode nav ul li a{
+
+    color:#111827;
+
+}
+
+.light-mode .skill-card{
+
+    background:#CBD5E1;
+    color:#111827;
+
+}
+/* ===========================
+   Scroll Animation
+=========================== */
+
+.hidden{
+
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 1s ease;
+
+}
+
+.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
