@@ -47,7 +47,15 @@ header{
 =========================== */
 
 .menu-toggle{
-    display:none;
+    display:block;
+    font-size:28px;
+    color:#38BDF8;
+    cursor:pointer;
+}
+
+#theme-toggle{
+    padding:8px 12px;
+    font-size:16px;
 }
 
 nav{
@@ -723,12 +731,11 @@ footer{
         display:flex;
         justify-content:space-between;
         align-items:center;
-        padding:15px 20px;
+        padding:10px 15px;
     }
 
     .logo{
-        font-size:32px;
-        white-space:nowrap;
+        font-size:24px;
     }
 
     .menu-toggle{
