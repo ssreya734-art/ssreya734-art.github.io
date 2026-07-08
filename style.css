@@ -789,3 +789,32 @@ nav ul li{
 
 }
 }
+/* ===========================
+   Footer Social Icons
+=========================== */
+
+.footer-icons{
+    margin:25px 0;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.footer-icons a{
+    color:white;
+    font-size:28px;
+    transition:0.3s ease;
+}
+
+.footer-icons a:hover{
+    color:#38BDF8;
+    transform:translateY(-5px) scale(1.2);
+}
+
+.light-mode .footer-icons a{
+    color:#111827;
+}
+
+.light-mode .footer-icons a:hover{
+    color:#0EA5E9;
+}
