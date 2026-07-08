@@ -426,9 +426,10 @@ nav ul li a:hover{
 }
 
 .certification-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;   
 }
 
 .certificate-card{
