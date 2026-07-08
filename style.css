@@ -47,12 +47,7 @@ header{
 =========================== */
 
 .menu-toggle{
-
     display:none;
-    font-size:30px;
-    cursor:pointer;
-    color:#38BDF8;
-
 }
 
 nav{
@@ -176,11 +171,11 @@ nav ul li a:hover{
 }
 
 .hero-image img{
-
-    width:350px;
+    width:200px;
+    height:200px;
     border-radius:50%;
+    object-fit:cover;
     border:5px solid #38BDF8;
-
 }
 /* ===========================
    About Section
@@ -731,65 +726,105 @@ footer{
 
 @media (max-width: 768px) {
 
-     /* Navbar */
+    /* Navbar */
 
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
     }
 
-   /* Home Section */
+    .logo{
+        font-size:32px;
+        white-space:nowrap;
+    }
 
-#home{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:50px 8%;
-    gap:40px;
-}
+    .menu-toggle{
+        display:block;
+        font-size:32px;
+        color:#38BDF8;
+        cursor:pointer;
+    }
 
-.hero-text{
-    width:100%;
-}
+    #nav-links{
+        display:none;
+        position:absolute;
+        top:80px;
+        right:20px;
+        width:220px;
+        background:#1E293B;
+        border-radius:10px;
+        padding:20px;
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
 
-.hero-text h1{
-    font-size:52px;
-    line-height:1.1;
-}
+    #nav-links.active{
+        display:flex;
+    }
 
-.hero-text h3{
-    font-size:24px;
-}
+    #theme-toggle{
+        padding:10px 15px;
+    }
 
-.hero-text p{
-    font-size:18px;
-}
+    /* Home */
 
-.intro{
-    max-width:100%;
-}
+    #home{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        padding:50px 20px;
+        gap:30px;
+    }
 
-.hero-image{
-    width:100%;
-}
+    .hero-text{
+        width:100%;
+    }
 
-.hero-image img{
-    width:260px;
-    max-width:100%;
-}
+    .hero-text h1{
+        font-size:48px;
+        line-height:1.1;
+    }
 
-.buttons{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
+    .hero-text h3{
+        font-size:22px;
+        line-height:1.4;
+    }
 
-.btn,
-.btn2{
-    width:220px;
-    margin:0;
-}
+    .hero-text p{
+        font-size:17px;
+    }
+
+    .intro{
+        max-width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:200px;
+        height:200px;
+        object-fit:cover;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .btn,
+    .btn2{
+        width:220px;
+    }
+
 }
 /* ===========================
    Footer Social Icons
