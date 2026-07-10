@@ -270,6 +270,34 @@ body.light-mode .btn2:hover{
     margin-right:20px;
     font-weight:600;
     transition:.3s;
+    position:relative;
+    overflow:hidden;
+
+}
+.btn::before,
+.btn2::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:100%;
+
+    background:rgba(255,255,255,.15);
+
+    left:0;
+
+    top:0;
+
+    transition:.4s;
+
+}
+.btn:hover::before,
+.btn2:hover::before{
+
+    width:100%;
 
 }
 
@@ -712,7 +740,7 @@ body.light-mode .btn2:hover{
 
     border-radius:20px;
 
-    transition:.4s;
+    transition:.4s ease;
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -720,9 +748,9 @@ body.light-mode .btn2:hover{
 
 .project-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
-    box-shadow:0 15px 35px rgba(34,211,238,.15);
+    box-shadow:0 18px 35px rgba(139,92,246,.25);
 
 }
 
@@ -818,14 +846,15 @@ body.light-mode .btn2:hover{
     background:#1E293B;
     padding:35px;
     border-radius:15px;
-    transition:.3s;
+    transition:.4s ease;
 
 }
 
 .certificate-card:hover{
 
     transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(56,189,248,.3);
+
+    box-shadow:0 18px 35px rgba(139,92,246,.25);
 
 }
 
@@ -889,12 +918,13 @@ body.light-mode .btn2:hover{
     background:#1E293B;
     padding:35px;
     border-radius:15px;
-    transition:.3s;
+    transition:.4s ease;
 }
 
 .experience-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(56,189,248,.3);
+
+    box-shadow:0 18px 35px rgba(139,92,246,.25);
 }
 
 .experience-card h3{
@@ -976,16 +1006,19 @@ body.light-mode .btn2:hover{
 
 footer{
 
-    background:#111827;
-    padding:40px 8%;
-    text-align:center;
+    margin-top:120px;
+
+    background:#0B1120;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:60px 8%;
 
 }
 
-.footer-content h3{
+.footer-content{
 
-    color:#38BDF8;
-    margin-bottom:10px;
+    text-align:center;
 
 }
 
@@ -993,6 +1026,47 @@ footer{
 
     color:#d1d5db;
     margin-bottom:10px;
+
+}
+.footer-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin:30px 0;
+
+}
+.footer-icons a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+.footer-icons a:hover{
+
+    transform:translateY(-8px);
+
+    background:linear-gradient(135deg,#8B5CF6,#22D3EE);
 
 }
 /* ===========================
@@ -1122,6 +1196,72 @@ footer{
         transform:translateX(0);
 
     }
+
+}
+section h2{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+    color:#F8FAFC;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:4px;
+
+    left:50%;
+
+    bottom:-15px;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(90deg,#8B5CF6,#22D3EE);
+
+    border-radius:20px;
+
+}
+::selection{
+
+    background:#8B5CF6;
+
+    color:white;
+
+}
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+::-webkit-scrollbar-track{
+
+    background:#0B1120;
+
+}
+::-webkit-scrollbar-thumb{
+
+    background:#8B5CF6;
+
+    border-radius:20px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+
+    background:#22D3EE;
 
 }
 /* ===========================
@@ -1300,23 +1440,39 @@ footer{
     color:#0EA5E9;
 }
 #topBtn{
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background: #38BDF8;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#8B5CF6,#22D3EE);
+
+    color:white;
+
+    cursor:pointer;
+
+    display:none;
+
+    font-size:22px;
+
+    transition:.3s;
+
+    z-index:999;
+
 }
 
 #topBtn:hover{
 
-    transform:scale(1.1);
+    transform:translateY(-6px);
 
 }
