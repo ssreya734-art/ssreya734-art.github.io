@@ -219,13 +219,22 @@ nav ul li a.active::after{
 
 /* Light Mode - Contact Button */
 .light-mode .timeline-content{
-    background:#E2E8F0;
-    color:#111827;
+    background:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 .light-mode .contact-info,
 .light-mode .contact-form{
 
-    background:#E2E8F0;
+    background:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+.light-mode footer{
+
+    background:#ffffff;
+    border-top:1px solid #E5E7EB;
 
 }
 .light-mode .project-tech span{
@@ -1100,13 +1109,25 @@ footer{
 
 }
 
-.light-mode .project-card,
-.light-mode .certificate-card,
-.light-mode .experience-card,
-.light-mode .about-content{
+.light-mode .project-card{
 
-    background:#E2E8F0;
-    color:#111827;
+    background:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+.light-mode .certificate-card{
+
+    background:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+.light-mode .experience-card{
+
+    background:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 
 }
 
@@ -1115,10 +1136,49 @@ footer{
     color:#374151;
 
 }
+.light-mode nav{
+
+    background:#ffffff;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
 
 .light-mode nav ul li a{
 
+    color:#374151;
+
+}
+
+.light-mode nav ul li a:hover{
+
+    color:#8B5CF6;
+
+}
+.light-mode .logo{
+
+    color:#7C3AED;
+
+}
+.light-mode section h2{
+
     color:#111827;
+
+}
+.light-mode .hero-text h3{
+
+    color:#374151;
+
+}
+.light-mode .hero-text p,
+.light-mode .intro{
+
+    color:#4B5563;
+
+}
+.light-mode .about-content{
+
+    background:#ffffff;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
 
