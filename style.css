@@ -34,6 +34,8 @@ body{
 
 header{
 
+    height:70px;
+    padding:0 8%;
     position: fixed;
 
     top: 18px;
@@ -97,7 +99,7 @@ nav{
 
 .logo{
 
-    font-size:30px;
+    font-size:34px;
     font-weight:800;
     color:#8B5CF6;
     letter-spacing:1px;
@@ -110,6 +112,7 @@ nav{
 }
 
 nav ul{
+    gap:30px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -556,7 +559,7 @@ body.light-mode .btn2:hover{
 
     border-radius:15px;
 
-    transition:.4s;
+     transition:.4s;
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -564,9 +567,9 @@ body.light-mode .btn2:hover{
 
 .timeline-content:hover{
 
-    transform:translateX(10px);
+    transform:translateY(-8px);
 
-    border-color:#8B5CF6;
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 
 }
 
@@ -602,11 +605,21 @@ body.light-mode .btn2:hover{
 
     line-height:1.8;
 
+
 }
 /*=============================
           Skills
 ==============================*/
 
+.skill-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+}
 .skills-grid{
 
     display:grid;
@@ -639,7 +652,7 @@ body.light-mode .btn2:hover{
 
     justify-content:space-between;
 
-    margin-bottom:8px;
+    margin-bottom:28px;
 
     font-weight:500;
 
@@ -673,15 +686,21 @@ body.light-mode .btn2:hover{
 
 }
 
-.strengths{
+.strength{
 
-    display:flex;
+    display:inline-flex;
 
-    flex-wrap:wrap;
+    align-items:center;
 
-    gap:15px;
+    gap:8px;
 
-    margin-top:20px;
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    background:var(--card-bg);
+
+    font-size:14px;
 
 }
 
@@ -706,8 +725,41 @@ body.light-mode .btn2:hover{
     transform:translateY(-5px);
 
 }
+.tech{
+
+    background:rgba(139,92,246,.12);
+
+    color:#8B5CF6;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+}
 
 @keyframes grow{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+.progress{
+
+    height:10px;
+
+    border-radius:30px;
+
+}
+.progress span{
+
+    animation:fillBar 2s ease;
+
+}
+
+@keyframes fillBar{
 
     from{
 
@@ -748,11 +800,12 @@ body.light-mode .btn2:hover{
 
 .project-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    box-shadow:0 18px 35px rgba(139,92,246,.25);
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
 
 }
+
 
 .project-card img{
 
@@ -770,11 +823,11 @@ body.light-mode .btn2:hover{
 
 }
 
-.project-content h3{
+.project-card h3{
 
-    color:#22D3EE;
+    font-size:24px;
 
-    margin-bottom:15px;
+    font-weight:700;
 
 }
 
@@ -1198,6 +1251,25 @@ footer{
     }
 
 }
+section{
+
+    padding:90px 8%;
+
+}
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:var(--text-color);
+    opacity:.7;
+}
 section h2{
 
     font-size:42px;
@@ -1473,6 +1545,6 @@ section h2::after{
 
 #topBtn:hover{
 
-    transform:translateY(-6px);
+     transform:translateY(-5px);
 
 }
