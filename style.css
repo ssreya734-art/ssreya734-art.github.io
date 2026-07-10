@@ -236,6 +236,22 @@ nav ul li a.active::after{
 }
 
 /* Light Mode - Contact Button */
+.light-mode .timeline-content{
+    background:#E2E8F0;
+    color:#111827;
+}
+.light-mode .contact-info,
+.light-mode .contact-form{
+
+    background:#E2E8F0;
+
+}
+.light-mode .project-tech span{
+
+    background:#CBD5E1;
+    color:#111827;
+
+}
 body.light-mode .btn2{
     color: #0F172A;
     border: 2px solid #38BDF8;
@@ -1126,7 +1142,7 @@ footer{
    Theme Toggle Button
 =========================== */
 
-#theme-toggle{
+/* #theme-toggle{
 
     padding:10px 15px;
     border:none;
@@ -1138,7 +1154,7 @@ footer{
     font-weight:bold;
     transition:.3s;
 
-}
+} */
 
 #theme-toggle:hover{
 
