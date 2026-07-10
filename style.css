@@ -358,68 +358,123 @@ body.light-mode .btn2:hover{
     color:#d1d5db;
 
 }
-/* ===========================
-   Education Section
-=========================== */
+/*==========================
+        Education
+===========================*/
 
-#education{
+.timeline{
 
-    padding:100px 8%;
+    position:relative;
+
+    max-width:900px;
+
+    margin:60px auto;
 
 }
 
-#education h2{
+.timeline::before{
 
-    text-align:center;
-    color:#38BDF8;
-    font-size:40px;
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:linear-gradient(#8B5CF6,#22D3EE);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:70px;
+
     margin-bottom:50px;
 
 }
 
-.education-container{
+.timeline-dot{
 
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
-    justify-content:center;
+    position:absolute;
+
+    left:10px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#22D3EE;
+
+    border:4px solid #111827;
+
+    box-shadow:0 0 20px #22D3EE;
 
 }
 
-.education-card{
+.timeline-content{
 
-    background:#1E293B;
-    padding:30px;
+    background:#111827;
+
+    padding:25px;
+
     border-radius:15px;
-    width:380px;
-    transition:.3s;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
 
 }
 
-.education-card:hover{
+.timeline-content:hover{
 
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(56,189,248,.3);
+    transform:translateX(10px);
 
-}
-
-.education-card h3{
-
-    color:#38BDF8;
-    margin-bottom:15px;
+    border-color:#8B5CF6;
 
 }
 
-.education-card p{
+.year{
 
-    margin-bottom:12px;
-    line-height:1.6;
-    color:#d1d5db;
+    color:#22D3EE;
+
+    font-size:14px;
+
+    font-weight:600;
 
 }
-/* ===========================
-   Skills Section
-=========================== */
+
+.timeline-content h3{
+
+    margin:10px 0;
+
+}
+
+.timeline-content h4{
+
+    color:#94A3B8;
+
+    margin-bottom:10px;
+
+    font-weight:500;
+
+}
+
+.timeline-content p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
 /*=============================
           Skills
 ==============================*/
@@ -1132,6 +1187,23 @@ footer{
 .skills-column{
 
     width:100%;
+
+}
+.timeline::before{
+
+    left:10px;
+
+}
+
+.timeline-item{
+
+    padding-left:45px;
+
+}
+
+.timeline-dot{
+
+    left:0;
 
 }
 
