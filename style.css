@@ -388,17 +388,18 @@ nav ul li a.active::after{
 
     min-height:100vh;
 
-    display:flex;
+    display:grid;
 
-    justify-content:space-between;
+    grid-template-columns:1.1fr .9fr;
 
     align-items:center;
 
-    gap:80px;
+    gap:90px;
 
-    padding:140px 8% 80px;
+    padding:170px 8% 110px;
 
 }
+
 
 
 /*=========================================
@@ -406,8 +407,6 @@ nav ul li a.active::after{
 =========================================*/
 
 .hero-text{
-
-    flex:1;
 
     animation:fadeLeft 1s ease;
 
@@ -417,7 +416,9 @@ nav ul li a.active::after{
 
     display:inline-block;
 
-    font-size:18px;
+    font-size:22px;
+
+    font-weight:600;
 
     color:var(--text-light);
 
@@ -427,34 +428,34 @@ nav ul li a.active::after{
 
 .hero-text h1{
 
-    font-size:72px;
-
-    font-weight:800;
+    font-size:82px;
 
     line-height:1.05;
 
-    margin-bottom:15px;
+    font-weight:800;
+
+    margin-bottom:20px;
 
     background:linear-gradient(
-    90deg,
-    var(--primary),
-    var(--secondary));
+        90deg,
+        var(--primary),
+        var(--secondary));
 
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
 
 }
 
+
 .hero-text h3{
 
-    font-size:38px;
+    font-size:34px;
+
+    font-weight:700;
 
     color:var(--text);
 
-    margin-bottom:25px;
-
-    min-height:50px;
+    margin-bottom:30px;
 
 }
 
@@ -462,11 +463,11 @@ nav ul li a.active::after{
 
     max-width:620px;
 
-    font-size:19px;
+    font-size:20px;
 
-    line-height:1.9;
+    line-height:2;
 
-    color:var(--text-light);
+    color:var(--paragraph);
 
 }
 
@@ -479,38 +480,48 @@ nav ul li a.active::after{
 
     display:flex;
 
-    gap:20px;
+    gap:22px;
 
-    margin-top:40px;
-
-    flex-wrap:wrap;
+    margin-top:45px;
 
 }
 
-.btn{
+.btn,
+.btn2{
+
+    height:60px;
+
+    padding:0 34px;
 
     display:flex;
 
     align-items:center;
 
-    gap:10px;
+    justify-content:center;
 
-    padding:16px 34px;
+    gap:12px;
 
-    border-radius:50px;
+    border-radius:18px;
 
-    background:linear-gradient(
-    135deg,
-    var(--primary),
-    var(--secondary));
-
-    color:white;
-
-    text-decoration:none;
+    font-size:17px;
 
     font-weight:600;
 
     transition:.35s;
+
+}
+
+.btn{
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary));
+
+    box-shadow:
+    0 15px 35px rgba(124,58,237,.25);
 
 }
 
@@ -518,32 +529,15 @@ nav ul li a.active::after{
 
     transform:translateY(-6px);
 
-    box-shadow:
-    0 18px 35px rgba(124,58,237,.35);
-
 }
 
 .btn2{
 
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    padding:16px 34px;
-
-    border-radius:50px;
-
     border:2px solid var(--secondary);
 
-    color:var(--secondary);
+    color:var(--primary);
 
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.35s;
+    background:transparent;
 
 }
 
@@ -557,12 +551,10 @@ nav ul li a.active::after{
 
 
 /*=========================================
-    HERO IMAGE
+            HERO IMAGE
 =========================================*/
 
 .hero-image{
-
-    flex:1;
 
     display:flex;
 
@@ -576,45 +568,54 @@ nav ul li a.active::after{
 
 .hero-image img{
 
-    width:380px;
+    width:430px;
 
-    height:380px;
+    height:430px;
 
     object-fit:cover;
 
     border-radius:50%;
 
-    border:8px solid var(--secondary);
+    border:7px solid transparent;
+
+    background:
+    linear-gradient(white,white) padding-box,
+    linear-gradient(135deg,var(--primary),var(--secondary)) border-box;
+
+    box-shadow:
+    0 25px 60px rgba(59,130,246,.18);
 
     position:relative;
 
     z-index:2;
 
-    box-shadow:
-    0 25px 60px rgba(56,189,248,.25);
-
     animation:float 5s ease-in-out infinite;
 
 }
+
+
+/*=========================================
+            GLOW
+=========================================*/
 
 .image-bg{
 
     position:absolute;
 
-    width:430px;
+    width:520px;
 
-    height:430px;
+    height:520px;
 
     border-radius:50%;
 
     background:radial-gradient(circle,
-    rgba(124,58,237,.35),
-    rgba(56,189,248,.18),
+    rgba(124,58,237,.12),
+    rgba(56,189,248,.08),
     transparent);
 
-    filter:blur(45px);
+    filter:blur(60px);
 
-    animation:pulse 5s infinite;
+    z-index:1;
 
 }
 
@@ -1943,4 +1944,17 @@ nav ul li a.active::after{
         font-size:32px;
     }
 
+}
+
+/*=========================================
+        DEFAULT LIGHT MODE
+=========================================*/
+
+body{
+    background:#F8FAFC;
+    color:#111827;
+}
+
+section{
+    background:#F8FAFC;
 }
