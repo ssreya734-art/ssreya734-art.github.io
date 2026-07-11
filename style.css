@@ -688,10 +688,12 @@ nav ul li a.active::after{
 }
 
 /*=========================================
-            HERO IMAGE
+        HERO IMAGE
 =========================================*/
 
 .hero-image{
+
+    flex:1;
 
     display:flex;
 
@@ -701,123 +703,158 @@ nav ul li a.active::after{
 
     position:relative;
 
-}
-
-.hero-image img{
-
-    width:430px;
-
-    height:430px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:7px solid transparent;
-
-    background:
-    linear-gradient(white,white) padding-box,
-    linear-gradient(135deg,var(--primary),var(--secondary)) border-box;
-
-    box-shadow:
-    0 25px 60px rgba(59,130,246,.18);
-
-    position:relative;
-
-    z-index:2;
-
-    animation:float 5s ease-in-out infinite;
+    animation:fadeRight 1.2s ease;
 
 }
 
 
-/*=========================================
-            GLOW
-=========================================*/
+/* Purple Glow */
 
 .image-bg{
 
     position:absolute;
 
-    width:520px;
+    width:470px;
 
-    height:520px;
+    height:470px;
 
     border-radius:50%;
 
-    background:radial-gradient(circle,
-    rgba(124,58,237,.12),
-    rgba(56,189,248,.08),
+    background:
+    radial-gradient(circle,
+    rgba(124,58,237,.45),
+    rgba(56,189,248,.18),
     transparent);
 
     filter:blur(60px);
 
-    z-index:1;
+    animation:pulse 5s infinite;
 
 }
 
+
+/* Outer Ring */
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(56,189,248,.18);
+
+    animation:rotateRing 18s linear infinite;
+
+}
+
+
+/* Second Ring */
+
+.hero-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:390px;
+
+    height:390px;
+
+    border-radius:50%;
+
+    border:2px dashed rgba(124,58,237,.18);
+
+    animation:rotateRingReverse 22s linear infinite;
+
+}
+
+
+/* Profile Image */
+
+.hero-image img{
+
+    width:360px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    position:relative;
+
+    z-index:5;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.18),
+
+    0 0 70px rgba(56,189,248,.25);
+
+    animation:float 5s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+}
 
 /*=========================================
-    ANIMATIONS
+        IMAGE ANIMATIONS
 =========================================*/
 
-@keyframes float{
+@keyframes rotateRing{
 
-    0%{
+    from{
 
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-18px);
+        transform:rotate(0deg);
 
     }
 
-    100%{
+    to{
 
-        transform:translateY(0);
+        transform:rotate(360deg);
 
     }
 
 }
 
-@keyframes pulse{
+@keyframes rotateRingReverse{
 
-    0%{
+    from{
 
-        transform:scale(.95);
-
-        opacity:.7;
+        transform:rotate(360deg);
 
     }
 
-    50%{
+    to{
 
-        transform:scale(1.05);
-
-        opacity:1;
-
-    }
-
-    100%{
-
-        transform:scale(.95);
-
-        opacity:.7;
+        transform:rotate(0deg);
 
     }
 
 }
 
-@keyframes fadeLeft{
+@keyframes fadeRight{
 
     from{
 
         opacity:0;
 
-        transform:translateX(-60px);
+        transform:translateX(60px);
 
     }
 
@@ -830,6 +867,7 @@ nav ul li a.active::after{
     }
 
 }
+
 /*=========================================
         ABOUT SECTION
 =========================================*/
