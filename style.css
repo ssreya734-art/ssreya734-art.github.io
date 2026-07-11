@@ -981,13 +981,37 @@ opacity:0;
 
 }
 
-#about h2{
+.section-heading{
 
     text-align:center;
 
-    font-size:44px;
-
     margin-bottom:70px;
+
+}
+
+.section-subtitle{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+    letter-spacing:4px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+
+}
+
+.section-heading h2{
+
+    font-size:46px;
+
+    font-weight:800;
 
     color:var(--text);
 
@@ -1067,7 +1091,7 @@ opacity:0;
 
     border:1px solid var(--border);
 
-    border-radius:20px;
+    border-radius:22px;
 
     padding:30px;
 
@@ -1075,20 +1099,14 @@ opacity:0;
 
     transition:.35s;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
-
 }
+
 
 .stat-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    background:linear-gradient(
-    135deg,
-    var(--primary),
-    var(--secondary));
-
-    color:white;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
 
@@ -1125,25 +1143,33 @@ opacity:0;
 }
 .stat-card i{
 
-font-size:36px;
+    font-size:34px;
 
-margin-bottom:18px;
+    margin-bottom:18px;
 
 }
 .stat-card:nth-child(1) i{
-color:#3B82F6;
+
+    color:#3B82F6;
+
 }
 
 .stat-card:nth-child(2) i{
-color:#10B981;
+
+    color:#10B981;
+
 }
 
 .stat-card:nth-child(3) i{
-color:#F59E0B;
+
+    color:#F59E0B;
+
 }
 
 .stat-card:nth-child(4) i{
-color:#EF4444;
+
+    color:#EF4444;
+
 }
 
 
