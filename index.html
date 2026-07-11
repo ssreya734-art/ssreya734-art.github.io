@@ -4,729 +4,790 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sreya S | Portfolio</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Devicons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+       <!-- Background Decorations -->
+    <div class="bg-blur bg1"></div>
+    <div class="bg-blur bg2"></div>
+    <div class="bg-grid"></div>
 
-    <!-- ================= NAVBAR ================= -->
-
+    <!-- Navigation Bar -->
     <header>
+       <nav>
 
-        <nav class="navbar">
+    <h2 class="logo">Sreya</h2>
 
-            <div class="logo">
-                <span>S</span>reya
-            </div>
+    <!-- Hamburger Button -->
 
-            <ul class="nav-links">
+    <div class="menu-toggle" id="menu-toggle">
 
-                <li><a href="#home">Home</a></li>
+        ☰
 
-                <li><a href="#about">About</a></li>
+    </div>
 
-                <li><a href="#education">Education</a></li>
+    <!-- Navigation -->
 
-                <li><a href="#skills">Skills</a></li>
+    <ul id="nav-links">
 
-                <li><a href="#projects">Projects</a></li>
+        <li><a href="#home">Home</a></li>
 
-                <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#about">About</a></li>
 
-                <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
 
-            </ul>
+        <li><a href="#projects">Projects</a></li>
 
-            <div class="nav-right">
+        <li><a href="#certifications">Certificates</a></li>
 
-                <button id="theme-toggle">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
+        <li><a href="#experience">Experience</a></li>
 
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <li><a href="#contact">Contact</a></li>
 
-            </div>
-
-        </nav>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+</nav>
 
     </header>
 
-    <!-- ================= HERO ================= -->
+    <!-- Home Section -->
+    <section id="home" class="hidden">
 
-    <section id="home" class="hero">
+    <div class="hero-text">
 
-        <div class="hero-content">
+        <span class="greeting">Hello, I'm</span>
 
-            <p class="welcome">
-                Hello, I'm
-            </p>
+        <h1>Sreya S</h1>
 
-            <h1>
-                Sreya S
-            </h1>
+        <h3>
+            <span id="typing"></span>
+        </h3>
 
-            <h2>
-                <span class="typing"></span>
-            </h2>
+        <p class="intro">
+            A passionate MCA student with a strong interest in web development,
+            software development, and building real-world applications.
+        </p>
 
-            <p class="hero-description">
+        <div class="buttons">
 
-                Passionate MCA student aspiring to become a Full Stack Developer.
-                I enjoy building modern, responsive web applications and continuously
-                learning new technologies to create impactful digital experiences.
+            <a href="resume/SreyaResume.pdf" class="btn" target="_blank">
+                <i class="fa-solid fa-file"></i>
+                View Resume
+            </a>
 
-            </p>
+            <a href="#contact" class="btn2">
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+            </a>
 
-            <div class="hero-buttons">
+        </div>
+        <div class="hero-social">
 
-                <a href="#projects" class="btn primary">
-                    View Projects
-                </a>
+            <a href="https://github.com/ssreya734-art" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
 
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
+            <a href="https://www.linkedin.com/in/sreya-s-815b22326/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-            </div>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/ssreya734-art"
-                    target="_blank">
-
-                    <i class="fab fa-github"></i>
-
-                </a>
-
-                <a href="https://www.linkedin.com/in/sreya-s-815b22326/"
-                    target="_blank">
-
-                    <i class="fab fa-linkedin"></i>
-
-                </a>
-
-            </div>
+            <a href="mailto:ssreya734@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
 
         </div>
 
-        <div class="hero-image">
+    </div>
 
-            <div class="glass-circle">
+    <div class="hero-image">
 
-                <img src="images/profile.png"
-                    alt="Sreya">
+        <div class="image-bg"></div>
 
-            </div>
+        <img src="images/profile.png" alt="Sreya">
 
-        </div>
+    </div>
 
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- About Section -->
+    <section id="about" class="hidden">
 
-    <section id="about" class="section">
+<div class="section-heading">
 
-        <h2 class="section-title">
+    <span>ABOUT ME</span>
 
-            About Me
+    <h2>Who I Am</h2>
 
-        </h2>
+</div>
 
-        <div class="glass-card about-card">
+<div class="about-wrapper">
+
+    <div class="about-content">
+
+        <p>
+
+            Hello! I'm <strong>Sreya S</strong>, an MCA student passionate about
+            Full Stack Development, Software Engineering and creating modern web
+            applications.
+
+            I enjoy learning new technologies, building real-world projects and
+            solving programming challenges.
+
+            My goal is to become a skilled Software Engineer while continuously
+            improving my knowledge in modern development technologies.
+
+        </p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <div class="stat-item">
+
+            <div class="section-icon education">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <h3>4+</h3>
+
+            <p>Education</p>
+
+        </div>
+
+        <div class="stat-item">
+
+            <div class="section-icon project">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <h3>3+</h3>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-item">
+
+            <div class="section-icon certificate">
+                <i class="fa-solid fa-award"></i>
+            </div>
+
+            <h3>2+</h3>
+
+            <p>Certificates</p>
+
+        </div>
+        <div class="stat-item">
+
+           <div class="section-icon experience">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <h3>1+</h3>
+
+            <p>Experience</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+    <!-- Education Section -->
+    <section id="education" class="hidden">
+
+    <div class="section-header">
+
+    <span class="section-tag">
+        <i class="fa-solid fa-graduation-cap"></i>
+        EDUCATION
+    </span>
+
+    <h2>My Academic Journey</h2>
+
+    <p>
+        My educational journey has helped me build a strong foundation in
+        computer science, programming and software development while
+        continuously learning modern technologies.
+    </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <!-- MCA -->
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+            <div class="edu-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <span class="year">2025 - 2027</span>
+
+            <h3>Master of Computer Applications (MCA)</h3>
+
+            <h4>Mar Thoma Institute of Information Technology, Ayur, Chadayamangalam</h4>
 
             <p>
-
-                I am an enthusiastic Master of Computer Applications (MCA) student
-                with a strong interest in Full Stack Web Development.
-
-                I enjoy transforming ideas into responsive, user-friendly web
-                applications using modern technologies.
-
+                Currently pursuing MCA with a focus on Full Stack Development,
+                Software Engineering, Database Systems and Web Technologies.
             </p>
 
-            <br>
+        </div>
 
-            <p>
+        </div>
 
-                My goal is to continuously improve my development skills,
-                contribute to innovative software projects,
-                and build scalable applications that solve real-world problems.
+        <!-- BCA -->
+        <div class="timeline-item">
 
-            </p>
+            <div class="timeline-dot"></div>
 
-            <div class="about-info">
-
-                <div>
-
-                    <h4>Name</h4>
-
-                    <p>Sreya S</p>
-
+            <div class="timeline-content">
+                <div class="edu-icon degree">
+                    <i class="fa-solid fa-laptop-code"></i>
                 </div>
 
-                <div>
+                <span class="year">2022 - 2025</span>
 
-                    <h4>Course</h4>
+                <h3>Bachelor of Science in Computer Science</h3>
 
-                    <p>Master of Computer Applications</p>
+                <h4>Mar Thoma College of Science and Technology, Ayur, Chadayamangalam</h4>
 
-                </div>
-
-                <div>
-
-                    <h4>Role</h4>
-
-                    <p>Aspiring Full Stack Developer</p>
-
-                </div>
-
-                <div>
-
-                    <h4>Location</h4>
-
-                    <p>Kerala, India</p>
-
-                </div>
+                <p>
+                    Completed Bachelor's degree with strong fundamentals in
+                    programming, databases, networking and web development.
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+        <!-- Higher Secondary -->
+        <div class="timeline-item">
 
-    <!-- ================= EDUCATION ================= -->
+            <div class="timeline-dot"></div>
 
-    <section id="education" class="section">
-
-        <h2 class="section-title">
-
-            Education
-
-        </h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content glass-card">
-
-                    <h3>
-
-                        Master of Computer Applications (MCA)
-
-                    </h3>
-
-                    <h4>
-
-                        Currently Pursuing
-
-                    </h4>
-
-                    <p>
-
-                        Building expertise in Software Development,
-                        Database Management,
-                        Full Stack Development,
-                        and Modern Programming Practices.
-
-                    </p>
-
+            <div class="timeline-content">
+                <div class="edu-icon higher">
+                    <i class="fa-solid fa-book-open-reader"></i>
                 </div>
 
-            </div>
+                <span class="year">2020 - 2022</span>
 
-            <div class="timeline-item">
+                <h3>Higher Secondary Education</h3>
 
-                <div class="timeline-dot"></div>
+                <h4>Government MGHSS, Chadayamangalam</h4>
 
-                <div class="timeline-content glass-card">
-
-                    <h3>
-
-                        Bachelor of Computer Applications (BCA)
-
-                    </h3>
-
-                    <p>
-
-                        Completed undergraduate studies with a strong
-                        foundation in programming,
-                        databases,
-                        networking,
-                        and software engineering.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content glass-card">
-
-                    <h3>
-
-                        Higher Secondary (12th)
-
-                    </h3>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content glass-card">
-
-                    <h3>
-
-                        Secondary School (10th)
-
-                    </h3>
-
-                </div>
+                <p>
+                    Completed Higher Secondary with Computer Science stream.
+                </p>
 
             </div>
 
         </div>
 
+        <!-- SSLC -->
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <div class="edu-icon school">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+
+                <span class="year">2019 - 2020</span>
+
+                <h3>Secondary School Education (CBSE)</h3>
+
+                <h4>St Ann's Central School, Ayur</h4>
+
+                <p>
+                    Successfully completed Secondary School Education.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
     </section>
+    <!-- ===========================
+        SKILLS SECTION
+============================ -->
 
-    <!-- ================= SKILLS ================= -->
+<section id="skills" class="hidden">
 
-    <section id="skills" class="section">
+    <div class="section-heading center">
 
-        <h2 class="section-title">
+        <span>SKILLS & TECHNOLOGIES</span>
 
-            Skills & Technologies
+        <h2>My Skills & Technologies</h2>
 
-        </h2>
+    </div>
 
-        <div class="skills-grid">
+    <div class="skills-grid">
 
-            <div class="skill-card glass-card">
-                <i class="devicon-java-plain colored"></i>
-                <span>Java</span>
-            </div>
+        <!-- LEFT SIDE -->
 
-            <div class="skill-card glass-card">
-                <i class="devicon-html5-plain colored"></i>
-                <span>HTML5</span>
-            </div>
+        <div class="skills-column">
 
-            <div class="skill-card glass-card">
-                <i class="devicon-css3-plain colored"></i>
-                <span>CSS3</span>
-            </div>
+            <div class="card-title">
 
-            <div class="skill-card glass-card">
-                <i class="devicon-javascript-plain colored"></i>
-                <span>JavaScript</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-php-plain colored"></i>
-                <span>PHP</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-python-plain colored"></i>
-                <span>Python</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-django-plain colored"></i>
-                <span>Django</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-mysql-plain colored"></i>
-                <span>MySQL</span>
-            </div>
-                        <div class="skill-card glass-card">
-                <i class="devicon-git-plain colored"></i>
-                <span>Git</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <span>Bootstrap</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="devicon-jquery-plain colored"></i>
-                <span>jQuery</span>
-            </div>
-
-            <div class="skill-card glass-card">
-                <i class="fa-solid fa-database"></i>
-                <span>SQL</span>
-            </div>
-
-            <div class="skill-card glass-card">
                 <i class="fa-solid fa-code"></i>
-                <span>Responsive Design</span>
+
+                <h3>My Skills</h3>
+
+            </div>
+
+            <!-- Skill -->
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>HTML</span>
+
+                    <span>90%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>CSS</span>
+
+                    <span>85%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>Java</span>
+
+                    <span>85%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>Python</span>
+
+                    <span>70%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>JavaScript</span>
+
+                    <span>65%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:65%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>PHP</span>
+
+                    <span>60%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:60%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>SQL</span>
+
+                    <span>80%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-info">
+
+                    <span>Django</span>
+
+                    <span>70%</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+
             </div>
 
         </div>
 
-    </section>
+        <!-- RIGHT SIDE -->
 
-    <!-- ================= FEATURED PROJECTS ================= -->
+        <div class="technology-card">
 
-    <section id="projects" class="section">
+            <div class="card-title">
 
-        <h2 class="section-title">
-            Featured Projects
-        </h2>
+                <i class="fa-solid fa-cube"></i>
 
-        <div class="projects-grid">
+                <h3>Technologies I Work With</h3>
 
-            <!-- Project 1 -->
+            </div>
 
-            <div class="project-card glass-card">
+            <div class="technology-grid">
+
+                <div class="tech-box">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-java-plain colored"></i>
+                    <span>Java</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-php-plain colored"></i>
+                    <span>PHP</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-django-plain"></i>
+                    <span>Django</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <span>VS Code</span>
+                </div>
+
+                <div class="tech-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Responsive</span>
+                </div>
+
+            </div>
+
+            <div class="learning-box">
+
+                <i class="fa-solid fa-star"></i>
+
+                <p>
+
+                    Always learning new technologies and building
+                    real-world software solutions.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ===========================
+        PROJECTS
+=========================== -->
+
+<section id="projects" class="hidden">
+
+    <div class="section-heading center">
+
+        <span>FEATURED PROJECTS</span>
+
+        <h2>My Featured Projects</h2>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- =================== -->
+        <!-- Project 1 -->
+        <!-- =================== -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="images/lms.jpg" alt="Learning Management System">
 
                 <div class="project-icon">
+
                     <i class="fa-solid fa-graduation-cap"></i>
+
                 </div>
+
+            </div>
+
+            <div class="project-content">
 
                 <h3>Learning Management System</h3>
 
                 <p>
 
-                    A responsive web application that enables students and faculty
-                    to manage courses, assignments, study materials and announcements
-                    through an intuitive dashboard.
+                    A complete web application for managing students,
+                    teachers, assignments, attendance and learning resources.
 
                 </p>
 
-                <div class="tech-stack">
+                <div class="project-tech">
 
-                    <span>HTML</span>
-                    <span>CSS</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
                     <span>JavaScript</span>
                     <span>PHP</span>
-                    <span>MySQL</span>
+                    <span>SQL</span>
 
                 </div>
 
-                <div class="project-links">
+                <div class="project-buttons">
 
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                        Code
+                    <a href="#" class="github-btn">
+
+                        <i class="fab fa-github"></i>
+
+                        GitHub
+
                     </a>
 
-                    <a href="#">
+                    <a href="#" class="demo-btn">
+
+                        Live Demo
+
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        Demo
+
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Project 2 -->
+        </div>
 
-            <div class="project-card glass-card">
+        <!-- =================== -->
+        <!-- Project 2 -->
+        <!-- =================== -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="images/personfinding.jpg" alt="Person Finding">
 
                 <div class="project-icon">
 
-                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
 
                 </div>
+
+            </div>
+
+            <div class="project-content">
 
                 <h3>Person Finding System</h3>
 
                 <p>
 
-                    A web platform developed to help locate missing individuals by
-                    securely storing, managing and searching records efficiently with
-                    user-friendly interfaces.
+                    A web platform for reporting and searching missing
+                    persons with secure database management.
 
                 </p>
 
-                <div class="tech-stack">
+                <div class="project-tech">
 
-                    <span>HTML</span>
-                    <span>CSS</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
                     <span>PHP</span>
-                    <span>MySQL</span>
+                    <span>SQL</span>
 
                 </div>
 
-                <div class="project-links">
+                <div class="project-buttons">
 
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                        Code
+                    <a href="#" class="github-btn">
+
+                        <i class="fab fa-github"></i>
+
+                        GitHub
+
                     </a>
 
-                    <a href="#">
+                    <a href="#" class="demo-btn">
+
+                        Live Demo
+
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        Demo
+
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Project 3 -->
+        </div>
 
-            <div class="project-card glass-card">
+        <!-- =================== -->
+        <!-- Project 3 -->
+        <!-- =================== -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="images/airport.jpg" alt="Airport">
 
                 <div class="project-icon">
 
-                    <i class="fa-solid fa-plane-departure"></i>
+                    <i class="fa-solid fa-plane"></i>
 
                 </div>
+
+            </div>
+
+            <div class="project-content">
 
                 <h3>Airport Management System</h3>
 
                 <p>
 
-                    A database-driven management system for handling passenger
-                    information, flight schedules, airport operations and reservation
-                    management.
+                    Database-driven airport management system for
+                    passengers, flights and ticket booking.
 
                 </p>
 
-                <div class="tech-stack">
+                <div class="project-tech">
 
-                    <span>Java</span>
-                    <span>MySQL</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                        Code
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        Demo
-                    </a>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Django</span>
+                    <span>SQL</span>
 
                 </div>
 
-            </div>
+                <div class="project-buttons">
 
-        </div>
-
-    </section>
-
-    <!-- ================= CERTIFICATIONS ================= -->
-
-    <section id="certifications" class="section">
-
-        <h2 class="section-title">
-
-            Certifications
-
-        </h2>
-
-        <div class="certificate-grid">
-
-            <div class="certificate-card glass-card">
-
-                <i class="fa-solid fa-award"></i>
-
-                <h3>
-
-                    Python Django Internship
-
-                </h3>
-
-                <p>
-
-                    Successfully completed a Python Django Internship at
-                    <strong>Srishti Innovative</strong>, gaining practical
-                    experience in backend development and web application design.
-
-                </p>
-
-            </div>
-
-            <div class="certificate-card glass-card">
-
-                <i class="fa-solid fa-certificate"></i>
-
-                <h3>
-
-                    Full Stack Web Development
-
-                </h3>
-
-                <p>
-
-                    Completed an online Full Stack Web Development course through
-                    Udemy covering frontend and backend web technologies.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section id="experience" class="section">
-
-        <h2 class="section-title">
-
-            Experience
-
-        </h2>
-
-        <div class="experience-card glass-card">
-
-            <div class="experience-icon">
-
-                <i class="fa-solid fa-laptop-code"></i>
-
-            </div>
-
-            <div class="experience-content">
-
-                <h3>
-
-                    Python Django Intern
-
-                </h3>
-
-                <h4>
-
-                    Srishti Innovative
-
-                </h4>
-
-                <p>
-
-                    Worked on real-world web development projects using
-                    Python and Django while learning database integration,
-                    MVC architecture, backend logic, authentication,
-                    debugging and deployment fundamentals.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-        <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="section">
-
-        <h2 class="section-title">
-            Contact Me
-        </h2>
-
-        <div class="contact-container">
-
-            <div class="contact-info glass-card">
-
-                <h3>Let's Connect</h3>
-
-                <p>
-
-                    I'm always interested in internship opportunities,
-                    collaborative projects, and connecting with fellow developers.
-                    Feel free to reach out!
-
-                </p>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-user"></i>
-
-                    <span>Sreya S</span>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-graduation-cap"></i>
-
-                    <span>MCA Student</span>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-code"></i>
-
-                    <span>Aspiring Full Stack Developer</span>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <span>Kerala, India</span>
-
-                </div>
-
-                <div class="social-links">
-
-                    <a href="https://github.com/ssreya734-art"
-                       target="_blank"
-                       class="social-btn">
+                    <a href="#" class="github-btn">
 
                         <i class="fab fa-github"></i>
 
+                        GitHub
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/sreya-s-815b22326/"
-                       target="_blank"
-                       class="social-btn">
+                    <a href="#" class="demo-btn">
 
-                        <i class="fab fa-linkedin"></i>
+                        Live Demo
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                     </a>
 
@@ -734,106 +795,215 @@
 
             </div>
 
-            <!-- Contact Form -->
-
-            <form class="contact-form glass-card">
-
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
-
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
-
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    required>
-
-                <textarea
-                    rows="7"
-                    placeholder="Write your message..."
-                    required>
-                </textarea>
-
-                <button type="submit" class="btn primary">
-
-                    Send Message
-
-                </button>
-
-            </form>
-
         </div>
+
+    </div>
+
+    <div class="all-projects">
+
+        <a href="#" class="all-btn">
+
+            View All Projects
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="hidden">
+
+    <h2>Certifications</h2>
+
+    <div class="certification-container">
+
+        <div class="certificate-card">
+
+    <h3>Python Django Internship</h3>
+
+    <p><strong>Organization:</strong> Srishti Innovative</p>
+
+    <p>
+        Successfully completed a Python Django Internship, gaining practical
+        experience in Python programming, Django framework, web application
+        development, database management, and software development.
+    </p>
+    <a href="#" class="certificate-btn">
+        View Certificate
+    </a>
+
+    </div>
+
+    <div class="certificate-card">
+
+        <h3>Full Stack Web Development Bootcamp</h3>
+
+        <p><strong>Platform:</strong> Udemy</p>
+
+        <p>
+            Successfully completed a Full Stack Web Development course covering
+            HTML, CSS, JavaScript, PHP, SQL, and responsive web development.
+        </p>
+        <a href="#" class="certificate-btn">
+            View Certificate
+        </a>
+
+    </div>
+
+    </div>
 
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- Experience Section -->
+
+    <section id="experience" class="hidden">
+
+    <h2>Experience</h2>
+
+    <div class="experience-container">
+
+        <div class="experience-card">
+
+            <h3>Python Django Intern</h3>
+
+            <p><strong>Organization:</strong> Srishti Innovative,Technopak Phase I, Thiruvananthapuram</p>
+
+            <p><strong>Duration:</strong> 1 Month</p>
+
+            <p>
+                Successfully completed a one-month Python Django Internship, where I gained
+                hands-on experience in developing dynamic web applications using Django.
+                Worked with Python, HTML, CSS, JavaScript, SQL, database management,
+                backend development, and real-world software development practices.
+            </p>
+            <div class="experience-tech">
+
+                <span>Python</span>
+
+                <span>Django</span>
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+                <span>SQL</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- Contact Section -->
+   <section id="contact" class="hidden">
+
+    <h2>Contact Me</h2>
+    <h3>Let's Connect!</h3>
+    <p class="contact-text">
+    I'm always open to internship opportunities, freelance work and collaborations.
+    Feel free to contact me anytime.
+    </p>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            
+        <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:ssreya734@gmail.com">
+        ssreya734@gmail.com
+        </a>
+        </p>
+
+        <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 6282714574
+        </p>
+
+        <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Kerala, India
+        </p>
+
+        <p>
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/ssreya734-art" target="_blank">
+        github.com/ssreya734-art
+        </a>
+        </p>
+
+        </div>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+    </section>
+
+    <!-- =========================
+        FOOTER
+========================== -->
 
     <footer>
 
         <div class="footer-content">
 
-            <h2>
-
-                Sreya S
-
-            </h2>
+            <h3>Sreya S</h3>
 
             <p>
-
-                Aspiring Full Stack Developer • MCA Student
-
+                MCA Student | Full Stack Developer | Software Developer
             </p>
 
-            <div class="footer-social">
+            <div class="footer-icons">
 
-                <a href="https://github.com/ssreya734-art"
-                   target="_blank">
-
+                <a href="https://github.com/ssreya734-art" target="_blank">
                     <i class="fab fa-github"></i>
-
                 </a>
 
-                <a href="https://www.linkedin.com/in/sreya-s-815b22326/"
-                   target="_blank">
-
+                <a href="https://www.linkedin.com/in/sreya-s-815b22326/" target="_blank">
                     <i class="fab fa-linkedin"></i>
+                </a>
 
+                <a href="mailto:ssreya734@gmail.com">
+                    <i class="fas fa-envelope"></i>
                 </a>
 
             </div>
 
+            <hr>
+
             <p class="copyright">
-
-                © 2026 Sreya S. All Rights Reserved.
-
+                © 2026 Sreya S. Designed & Developed by Sreya S.
             </p>
 
         </div>
 
     </footer>
+    
+    <!-- Scroll To Top -->
 
-    <!-- ================= SCROLL TO TOP ================= -->
-
-    <button id="scrollTop">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
     </button>
-
-    <!-- ================= BACKGROUND EFFECTS ================= -->
-
-    <div class="blur-circle one"></div>
-
-    <div class="blur-circle two"></div>
-
-    <div class="blur-circle three"></div>
-
-    <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
 
