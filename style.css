@@ -498,32 +498,32 @@ nav ul li a.active::after{
 
 }
 /*=========================================
-    HERO SECTION
+            HERO SECTION
 =========================================*/
 
 #home{
 
     min-height:100vh;
 
-    display:grid;
-
-    grid-template-columns:1.1fr .9fr;
+    display:flex;
 
     align-items:center;
 
+    justify-content:space-between;
+
     gap:90px;
 
-    padding:170px 8% 110px;
+    padding:140px 8% 80px;
+
+    position:relative;
 
 }
 
-
-
-/*=========================================
-    HERO TEXT
-=========================================*/
-
 .hero-text{
+
+    flex:1;
+
+    max-width:650px;
 
     animation:fadeLeft 1s ease;
 
@@ -533,11 +533,15 @@ nav ul li a.active::after{
 
     display:inline-block;
 
-    font-size:22px;
+    font-size:17px;
 
     font-weight:600;
 
-    color:var(--text-light);
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
 
     margin-bottom:18px;
 
@@ -545,70 +549,70 @@ nav ul li a.active::after{
 
 .hero-text h1{
 
-    font-size:82px;
+    font-size:78px;
 
     line-height:1.05;
 
     font-weight:800;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
     background:linear-gradient(
-        90deg,
-        var(--primary),
-        var(--secondary));
+    90deg,
+    #7C3AED,
+    #38BDF8);
 
     -webkit-background-clip:text;
+
     -webkit-text-fill-color:transparent;
 
 }
-
 
 .hero-text h3{
 
     font-size:34px;
 
-    font-weight:700;
+    font-weight:600;
 
     color:var(--text);
 
-    margin-bottom:30px;
+    margin-bottom:25px;
+
+    min-height:45px;
 
 }
 
 .intro{
 
-    max-width:620px;
-
-    font-size:20px;
+    font-size:19px;
 
     line-height:2;
 
     color:var(--paragraph);
 
+    max-width:600px;
+
+    margin-bottom:40px;
+
 }
-
-
-/*=========================================
-    BUTTONS
-=========================================*/
 
 .buttons{
 
     display:flex;
 
-    gap:22px;
+    align-items:center;
 
-    margin-top:45px;
+    gap:20px;
+
+    flex-wrap:wrap;
 
 }
 
-.btn,
-.btn2{
+/*=========================================
+            HERO BUTTONS
+=========================================*/
 
-    height:60px;
-
-    padding:0 34px;
+.btn{
 
     display:flex;
 
@@ -616,29 +620,26 @@ nav ul li a.active::after{
 
     justify-content:center;
 
-    gap:12px;
+    gap:10px;
 
-    border-radius:18px;
+    padding:16px 34px;
 
-    font-size:17px;
+    border-radius:50px;
+
+    text-decoration:none;
 
     font-weight:600;
-
-    transition:.35s;
-
-}
-
-.btn{
 
     color:white;
 
     background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary));
+    135deg,
+    var(--primary),
+    var(--secondary));
 
-    box-shadow:
-    0 15px 35px rgba(124,58,237,.25);
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(124,58,237,.30);
 
 }
 
@@ -646,15 +647,33 @@ nav ul li a.active::after{
 
     transform:translateY(-6px);
 
+    box-shadow:0 22px 45px rgba(124,58,237,.40);
+
 }
 
 .btn2{
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:var(--secondary);
+
     border:2px solid var(--secondary);
 
-    color:var(--primary);
-
-    background:transparent;
+    transition:.35s;
 
 }
 
@@ -664,8 +683,9 @@ nav ul li a.active::after{
 
     color:white;
 
-}
+    transform:translateY(-6px);
 
+}
 
 /*=========================================
             HERO IMAGE
