@@ -1141,7 +1141,7 @@ nav ul li a.active::after{
 
 
 /*=========================================
-        EDUCATION
+            EDUCATION SECTION
 =========================================*/
 
 #education{
@@ -1154,11 +1154,15 @@ nav ul li a.active::after{
 
     position:relative;
 
-    max-width:900px;
+    max-width:950px;
 
     margin:auto;
 
+    padding-left:30px;
+
 }
+
+/* Timeline Line */
 
 .timeline::before{
 
@@ -1166,7 +1170,7 @@ nav ul li a.active::after{
 
     position:absolute;
 
-    left:22px;
+    left:32px;
 
     top:0;
 
@@ -1174,35 +1178,39 @@ nav ul li a.active::after{
 
     height:100%;
 
-    background:linear-gradient(
-    var(--primary),
-    var(--secondary));
+    border-radius:20px;
 
-    border-radius:30px;
+    background:linear-gradient(
+        var(--primary),
+        var(--secondary));
 
 }
+
+/* Timeline Item */
 
 .timeline-item{
 
     position:relative;
 
-    padding-left:80px;
-
     margin-bottom:55px;
 
+    padding-left:70px;
+
 }
+
+/* Timeline Dot */
 
 .timeline-dot{
 
     position:absolute;
 
-    left:10px;
+    left:18px;
 
-    top:18px;
+    top:28px;
 
-    width:28px;
+    width:30px;
 
-    height:28px;
+    height:30px;
 
     border-radius:50%;
 
@@ -1210,9 +1218,23 @@ nav ul li a.active::after{
 
     border:5px solid var(--bg);
 
-    box-shadow:0 0 25px rgba(56,189,248,.45);
+    box-shadow:
+
+    0 0 0 6px rgba(56,189,248,.15),
+
+    0 0 30px rgba(56,189,248,.45);
+
+    transition:.4s;
 
 }
+
+.timeline-item:hover .timeline-dot{
+
+    transform:scale(1.2);
+
+}
+
+/* Card */
 
 .timeline-content{
 
@@ -1220,43 +1242,47 @@ nav ul li a.active::after{
 
     border:1px solid var(--border);
 
-    border-radius:22px;
+    border-radius:25px;
 
-    padding:28px;
+    padding:30px;
 
-    transition:.35s;
+    transition:.4s;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
 
 }
 
 .timeline-content:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    box-shadow:0 25px 50px rgba(0,0,0,.18);
+    box-shadow:0 28px 55px rgba(0,0,0,.18);
 
 }
+
+/* Year Badge */
 
 .year{
 
     display:inline-block;
 
-    background:rgba(56,189,248,.12);
-
-    color:var(--secondary);
-
-    padding:6px 14px;
+    padding:8px 18px;
 
     border-radius:30px;
 
-    font-size:14px;
+    background:rgba(124,58,237,.12);
 
-    font-weight:600;
+    color:var(--secondary);
+
+    font-weight:700;
+
+    font-size:14px;
 
     margin-bottom:18px;
 
 }
+
+/* Headings */
 
 .timeline-content h3{
 
@@ -1264,23 +1290,35 @@ nav ul li a.active::after{
 
     margin-bottom:10px;
 
+    color:var(--text);
+
 }
 
 .timeline-content h4{
 
+    font-size:17px;
+
     color:var(--text-light);
 
-    font-weight:500;
+    margin-bottom:18px;
 
-    margin-bottom:15px;
+    font-weight:500;
 
 }
 
 .timeline-content p{
 
-    color:var(--text-light);
-
     line-height:1.8;
+
+    color:var(--paragraph);
+
+}
+
+/* Hover Effect */
+
+.timeline-content:hover{
+
+    border-color:rgba(124,58,237,.25);
 
 }
 /*=========================================
@@ -2246,16 +2284,28 @@ nav ul li a.active::after{
 
     /* Timeline */
 
+    .timeline{
+
+        padding-left:10px;
+
+    }
+
     .timeline::before{
-        left:10px;
+
+        left:12px;
+
     }
 
     .timeline-item{
+
         padding-left:45px;
+
     }
 
     .timeline-dot{
-        left:0;
+
+        left:-2px;
+
     }
 
     /* Skills */
