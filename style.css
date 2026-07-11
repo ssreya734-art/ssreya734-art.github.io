@@ -1126,14 +1126,33 @@ opacity:0;
 
 #about{
 
-    padding:120px 8%;
+    padding:90px 8%;
 
 }
 
-.section-heading{
+.section-heading span{
 
-    margin-bottom:60px;
-    text-align:left;
+    color:#7C3AED;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+    margin-top:10px;
+
+    margin-bottom:25px;
+
+    font-size:52px;
+
+    font-weight:700;
 
 }
 .section-heading span{
@@ -1239,30 +1258,65 @@ opacity:0;
 
 /* Right Side Statistics */
 
-.about-stats{
+.stats-box{
+
+    background:var(--card);
+
+    border-radius:28px;
+
+    padding:45px;
 
     display:grid;
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:20px;
+    gap:35px;
+
+    border:1px solid var(--border);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+.stat-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
 
 }
 
-.education-icon{
-background:linear-gradient(135deg,#7C3AED,#A855F7);
+.education{
+
+background:#F1E8FF;
+color:#7C3AED;
 }
 
-.project-icon{
-background:linear-gradient(135deg,#2563EB,#06B6D4);
+.projects{
+
+background:#EAF3FF;
+color:#3B82F6;
 }
 
-.certificate-icon{
-background:linear-gradient(135deg,#F59E0B,#F97316);
+.certificates{
+
+background:#E8FFF8;
+color:#10B981;
 }
 
-.experience-icon{
-background:linear-gradient(135deg,#10B981,#22C55E);
+.experience{
+
+background:#FFF6DF;
+color:#F59E0B;
 }
 
 .stat-card{
