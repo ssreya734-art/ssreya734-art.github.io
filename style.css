@@ -1322,12 +1322,22 @@ nav ul li a.active::after{
 
 }
 /*=========================================
-        SKILLS SECTION
+            SKILLS SECTION
 =========================================*/
 
 #skills{
 
     padding:120px 8%;
+
+}
+
+#skills h2{
+
+    text-align:center;
+
+    font-size:44px;
+
+    margin-bottom:70px;
 
 }
 
@@ -1337,11 +1347,11 @@ nav ul li a.active::after{
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:50px;
-
-    margin-top:60px;
+    gap:40px;
 
 }
+
+/* Skill Card */
 
 .skills-column{
 
@@ -1349,21 +1359,21 @@ nav ul li a.active::after{
 
     border:1px solid var(--border);
 
-    border-radius:24px;
+    border-radius:28px;
 
     padding:35px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.4s;
 
-    transition:.35s;
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
 
 }
 
 .skills-column:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    box-shadow:0 25px 50px rgba(0,0,0,.18);
+    box-shadow:0 28px 55px rgba(0,0,0,.18);
 
 }
 
@@ -1371,19 +1381,37 @@ nav ul li a.active::after{
 
     color:var(--secondary);
 
-    font-size:22px;
+    font-size:24px;
 
     margin-bottom:30px;
 
-    text-transform:uppercase;
+    position:relative;
 
-    letter-spacing:1px;
+}
+
+.skills-column h3::after{
+
+    content:"";
+
+    width:60px;
+
+    height:3px;
+
+    background:linear-gradient(
+    var(--primary),
+    var(--secondary));
+
+    display:block;
+
+    margin-top:10px;
+
+    border-radius:10px;
 
 }
 
 
 /*=========================================
-        SKILL BAR
+            PROGRESS BARS
 =========================================*/
 
 .skill{
@@ -1392,9 +1420,15 @@ nav ul li a.active::after{
 
     justify-content:space-between;
 
+    align-items:center;
+
     margin-bottom:12px;
 
+    font-size:16px;
+
     font-weight:600;
+
+    color:var(--text);
 
 }
 
@@ -1404,7 +1438,7 @@ nav ul li a.active::after{
 
     height:10px;
 
-    background:#1E293B;
+    background:rgba(255,255,255,.08);
 
     border-radius:30px;
 
@@ -1425,11 +1459,13 @@ nav ul li a.active::after{
     var(--primary),
     var(--secondary));
 
-    animation:grow 2s ease;
+    box-shadow:0 0 20px rgba(124,58,237,.4);
+
+    animation:growBar 2s ease;
 
 }
 
-@keyframes grow{
+@keyframes growBar{
 
     from{
 
@@ -1439,9 +1475,8 @@ nav ul li a.active::after{
 
 }
 
-
 /*=========================================
-        STRENGTH TAGS
+            STRENGTH TAGS
 =========================================*/
 
 .strengths{
@@ -1450,7 +1485,7 @@ nav ul li a.active::after{
 
     flex-wrap:wrap;
 
-    gap:14px;
+    gap:15px;
 
     margin-top:20px;
 
@@ -1468,9 +1503,9 @@ nav ul li a.active::after{
 
     border:1px solid rgba(124,58,237,.20);
 
-    transition:.3s;
+    transition:.35s;
 
-    cursor:default;
+    font-weight:600;
 
 }
 
@@ -1483,10 +1518,11 @@ nav ul li a.active::after{
 
     color:white;
 
-    transform:translateY(-5px);
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 12px 25px rgba(124,58,237,.35);
 
 }
-
 
 /*=========================================
         LIGHT MODE
