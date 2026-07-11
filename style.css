@@ -73,6 +73,123 @@ body{
     color .35s;
 
 }
+/*=========================================
+    BACKGROUND DECORATIONS
+=========================================*/
+
+.bg-blur{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    z-index:-3;
+
+    opacity:.45;
+
+    animation:floatGlow 10s ease-in-out infinite;
+
+}
+
+.bg1{
+
+    width:380px;
+
+    height:380px;
+
+    background:#7C3AED;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.bg2{
+
+    width:320px;
+
+    height:320px;
+
+    background:#38BDF8;
+
+    bottom:-120px;
+
+    right:-100px;
+
+    animation-delay:3s;
+
+}
+
+.bg-grid{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-4;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    pointer-events:none;
+
+}
+
+/* Light Mode */
+
+body.light-mode .bg-grid{
+
+    background-image:
+
+    linear-gradient(rgba(15,23,42,.05) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(15,23,42,.05) 1px, transparent 1px);
+
+}
+
+body.light-mode .bg1{
+
+    opacity:.18;
+
+}
+
+body.light-mode .bg2{
+
+    opacity:.18;
+
+}
+
+/* Animation */
+
+@keyframes floatGlow{
+
+    0%{
+
+        transform:translateY(0) scale(1);
+
+    }
+
+    50%{
+
+        transform:translateY(-35px) scale(1.08);
+
+    }
+
+    100%{
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
 
 
 /*=========================================
