@@ -247,6 +247,33 @@ section{
     border-radius:20px;
 
 }
+.section-tag{
+
+display:inline-block;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+color:var(--secondary);
+
+margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:50px;
+
+}
 /*=========================================
     HEADER
 =========================================*/
@@ -275,7 +302,8 @@ nav{
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 38px;
+    padding:16px 45px;
+    gap:32px;
 
     background:rgba(255,255,255,.82);
 
@@ -500,10 +528,27 @@ nav ul li a.active::after{
 /*=========================================
             HERO SECTION
 =========================================*/
+#typing::after{
+
+content:"|";
+
+animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
 
 #home{
 
-    min-height:85vh;
+    min-height:78vh;
 
     display:flex;
 
@@ -513,7 +558,7 @@ nav ul li a.active::after{
 
     gap:60px;
 
-    padding:120px 8% 60px;
+    padding:100px 8% 40px;
 
 }
 
@@ -777,9 +822,9 @@ nav ul li a.active::after{
 
 .hero-image img{
 
-    width:340px;
+    width:370px;
 
-    height:340px;
+    height:370px;
 
     object-fit:cover;
 
@@ -923,63 +968,6 @@ nav ul li a.active::after{
     transform:translateY(-8px) scale(1.08);
 
     box-shadow:0 18px 35px rgba(124,58,237,.35);
-
-}
-/*=========================================
-        SCROLL DOWN
-=========================================*/
-
-.scroll-down{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:35px;
-
-    transform:translateX(-50%);
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:10px;
-
-    color:var(--paragraph);
-
-    font-size:14px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    animation:bounce 2s infinite;
-
-}
-
-.scroll-down i{
-
-    font-size:22px;
-
-    color:var(--secondary);
-
-}
-
-@keyframes bounce{
-
-    0%,100%{
-
-        transform:translate(-50%,0);
-
-    }
-
-    50%{
-
-        transform:translate(-50%,10px);
-
-    }
 
 }
 
@@ -1134,6 +1122,28 @@ nav ul li a.active::after{
 
     color:white;
 
+}
+.stat-card i{
+
+font-size:36px;
+
+margin-bottom:18px;
+
+}
+.stat-card:nth-child(1) i{
+color:#3B82F6;
+}
+
+.stat-card:nth-child(2) i{
+color:#10B981;
+}
+
+.stat-card:nth-child(3) i{
+color:#F59E0B;
+}
+
+.stat-card:nth-child(4) i{
+color:#EF4444;
 }
 
 
@@ -2534,9 +2544,19 @@ footer{
 }
 
 
+
 /* ===============================
    LIGHT MODE - CARDS
 ================================== */
+body.light-mode .stat-card{
+
+background:white;
+
+border:1px solid #E5E7EB;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
 
 body.light-mode .about-content,
 body.light-mode .skills-column,
