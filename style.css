@@ -503,19 +503,17 @@ nav ul li a.active::after{
 
 #home{
 
-    min-height:100vh;
+    min-height:85vh;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:space-between;
 
-    gap:90px;
+    align-items:center;
 
-    padding:140px 8% 80px;
+    gap:60px;
 
-    position:relative;
+    padding:120px 8% 60px;
 
 }
 
@@ -549,7 +547,7 @@ nav ul li a.active::after{
 
 .hero-text h1{
 
-    font-size:78px;
+    font-size:64px;
 
     line-height:1.05;
 
@@ -584,7 +582,7 @@ nav ul li a.active::after{
 
 .intro{
 
-    font-size:19px;
+    font-size:18px;
 
     line-height:2;
 
@@ -779,9 +777,9 @@ nav ul li a.active::after{
 
 .hero-image img{
 
-    width:360px;
+    width:340px;
 
-    height:360px;
+    height:340px;
 
     object-fit:cover;
 
@@ -2546,4 +2544,45 @@ body{
 
 section{
     background:#F8FAFC;
+}
+
+/* ===============================
+   LIGHT MODE - CARDS
+================================== */
+
+body.light-mode .about-content,
+body.light-mode .skills-column,
+body.light-mode .timeline-content,
+body.light-mode .project-card,
+body.light-mode .certificate-card,
+body.light-mode .experience-card,
+body.light-mode .contact-info,
+body.light-mode .contact-form{
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+body.light-mode .about-content p,
+body.light-mode .timeline-content p,
+body.light-mode .project-content p,
+body.light-mode .certificate-card p,
+body.light-mode .experience-card p,
+body.light-mode .contact-info p{
+
+    color:#475569;
+
+}
+
+body.light-mode .timeline-content h3,
+body.light-mode .project-content h3,
+body.light-mode .certificate-card h3,
+body.light-mode .experience-card h3{
+
+    color:#111827;
+
 }
