@@ -135,21 +135,13 @@ section{
 =========================================*/
 
 header{
-
     position:fixed;
-
-    top:20px;
-
+    top:18px;
     left:0;
-
     width:100%;
-
     display:flex;
-
     justify-content:center;
-
     z-index:1000;
-
 }
 
 
@@ -160,34 +152,40 @@ header{
 nav{
 
     width:92%;
-
-    max-width:1250px;
+    max-width:1280px;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:16px 35px;
+    padding:18px 38px;
 
-    background:rgba(15,23,42,.88);
+    background:rgba(255,255,255,.82);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
 
-    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.6);
 
-    border:1px solid var(--border);
-
-    border-radius:22px;
+    border-radius:24px;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.18);
+    0 10px 40px rgba(15,23,42,.08);
 
-    transition:.35s;
+    transition:.35s ease;
 
 }
 
+body:not(.light-mode) nav{
+
+    background:rgba(17,24,39,.82);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+
+}
 
 /*=========================================
     LIGHT MODE NAVBAR
@@ -206,8 +204,7 @@ body.light-mode nav{
 
 .logo{
 
-    font-size:32px;
-
+    font-size:2.2rem;
     font-weight:800;
 
     color:var(--primary);
@@ -235,11 +232,12 @@ nav ul{
 
     align-items:center;
 
-    gap:35px;
+    gap:42px;
 
     list-style:none;
 
 }
+
 
 
 nav ul li{
@@ -255,13 +253,13 @@ nav ul li a{
 
     text-decoration:none;
 
-    color:var(--text);
-
     font-size:17px;
 
-    font-weight:500;
+    font-weight:600;
 
-    transition:.3s;
+    color:var(--text);
+
+    transition:.35s;
 
 }
 
@@ -278,13 +276,13 @@ nav ul li a::after{
 
     left:0;
 
-    bottom:-8px;
+    bottom:-10px;
 
     width:0;
 
     height:3px;
 
-    border-radius:20px;
+    border-radius:30px;
 
     background:linear-gradient(
     90deg,
@@ -336,24 +334,23 @@ nav ul li a.active::after{
 
 #theme-toggle{
 
-    width:48px;
+    width:50px;
+    height:50px;
 
-    height:48px;
+    border-radius:16px;
 
     border:none;
 
-    border-radius:14px;
-
     cursor:pointer;
 
-    font-size:18px;
-
-    color:white;
+    font-size:20px;
 
     background:linear-gradient(
     135deg,
     var(--primary),
     var(--secondary));
+
+    color:white;
 
     transition:.35s;
 
@@ -361,10 +358,10 @@ nav ul li a.active::after{
 
 #theme-toggle:hover{
 
-    transform:rotate(180deg) translateY(-3px);
+    transform:translateY(-3px);
 
     box-shadow:
-    0 10px 25px rgba(124,58,237,.35);
+    0 12px 28px rgba(124,58,237,.35);
 
 }
 
@@ -372,16 +369,15 @@ nav ul li a.active::after{
 /*=========================================
     HAMBURGER
 =========================================*/
-
 .menu-toggle{
 
     display:none;
 
     font-size:30px;
 
-    color:var(--primary);
-
     cursor:pointer;
+
+    color:var(--primary);
 
 }
 /*=========================================
