@@ -1361,6 +1361,61 @@ RESPONSIVE
 
 }
 
+/* ===========================
+      LIGHT MODE FIX
+=========================== */
+
+body.light-mode .tech-box span{
+
+    color:#222;
+
+}
+
+
+body.light-mode .tech-box{
+
+    background:rgba(0,0,0,0.05);
+
+}
+
+
+body.light-mode .technology-card,
+body.light-mode .skills-column{
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,0.1);
+
+}
+
+
+body.light-mode .card-title h3{
+
+    color:#222;
+
+}
+
+
+body.light-mode .skill-info span:first-child{
+
+    color:#222;
+
+}
+
+
+body.light-mode .progress{
+
+    background:#ddd;
+
+}
+
+
+body.light-mode .learning-box p{
+
+    color:#333;
+
+}
+
 /*=========================================
             PROJECTS SECTION
 =========================================*/
