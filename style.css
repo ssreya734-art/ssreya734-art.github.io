@@ -1120,7 +1120,7 @@ RESPONSIVE
 .card-title i{
 
     font-size:25px;
-    color:var(--secondary);
+    color:var(--primary);
 
 }
 
@@ -1166,7 +1166,7 @@ RESPONSIVE
 
 .skill-info span:last-child{
 
-    color:var(--secondary);
+    color:var(--primary);
     font-weight:700;
 
 }
@@ -1194,8 +1194,8 @@ RESPONSIVE
 
     background:linear-gradient(
         90deg,
-        var(--primary),
-        var(--secondary)
+        #7C3AED,
+        #A855F7
     );
 
 }
@@ -1248,6 +1248,7 @@ RESPONSIVE
 .tech-box i{
 
     font-size:35px;
+    color:var(--primary);
 
 }
 
@@ -1268,7 +1269,10 @@ RESPONSIVE
 
     transform:translateY(-8px);
 
-    border-color:var(--secondary);
+    border-color:var(--primary);
+
+    box-shadow:
+    0 15px 35px rgba(124,58,237,.25);
 
 }
 
