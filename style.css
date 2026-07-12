@@ -752,23 +752,20 @@ LEFT CARD
 =============================*/
 
 .about-content{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:25px;
-    padding:45px;
-    box-shadow:0 15px 40px rgba(0,0,0,.10);
-    transition:.35s;
+    padding-right:40px;
+    background:none;
+    border:none;
+    box-shadow:none;
 }
 
 .about-content:hover{
-    transform:translateY(-8px);
-    box-shadow:0 22px 50px rgba(0,0,0,.16);
+    transform:none;
+    box-shadow:none;
 }
 
 .about-content p{
-    font-size:18px;
+    font-size:20px;
     line-height:2;
-    color:var(--text-light);
 }
 
 .about-content strong{
@@ -936,30 +933,37 @@ RIGHT CARD
 =============================*/
 
 .stats-box{
-    background:var(--card);
+    background: var(--card);
     border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
+    border-radius:30px;
+    padding:22px;
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    gap:22px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
 }
 
 .stat-item{
+    background:rgba(255,255,255,.65);
+    border:1px solid rgba(124,58,237,.08);
+    border-radius:20px;
+    padding:22px;
+
     display:flex;
     align-items:center;
     gap:18px;
-    padding:30px;
-    transition:.3s;
+
+    transition:.35s;
 }
 
 .stat-item:hover{
-    background:rgba(124,58,237,.05);
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(124,58,237,.12);
 }
 
 /* Borders */
 
-.stat-item:nth-child(1){
+/* .stat-item:nth-child(1){
     border-right:1px solid var(--border);
     border-bottom:1px solid var(--border);
 }
@@ -970,18 +974,18 @@ RIGHT CARD
 
 .stat-item:nth-child(3){
     border-right:1px solid var(--border);
-}
-
+} */
 .stat-item h3{
-    font-size:34px;
+    font-size:40px;
     color:var(--primary);
-    margin-bottom:6px;
+    margin-bottom:4px;
+    font-weight:700;
 }
 
 .stat-item p{
-    color:var(--paragraph);
-    font-size:16px;
-    font-weight:500;
+    color:var(--text-light);
+    font-size:17px;
+    font-weight:600;
 }
 
 /*=============================
