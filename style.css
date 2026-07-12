@@ -1908,7 +1908,19 @@ body.light-mode .experience-card{
     grid-template-columns:380px 1fr;
     gap:40px;
 }
+.contact-description{
 
+    max-width:700px;
+
+    margin:0 0 50px;
+
+    color:var(--paragraph);
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
 /*=========================================
             CONTACT INFO
 =========================================*/
