@@ -175,7 +175,7 @@ SECTION HEADING
 
 .section-heading h2{
     position:relative;
-    display:inline-block;
+    display:block;
     font-size:54px;
     font-weight:800;
     line-height:1.1;
@@ -752,7 +752,7 @@ LEFT CARD
 =============================*/
 
 .about-content{
-    padding-right:40px;
+    padding:0;
     background:none;
     border:none;
     box-shadow:none;
@@ -764,8 +764,9 @@ LEFT CARD
 }
 
 .about-content p{
-    font-size:20px;
-    line-height:2;
+    max-width:520px;
+    line-height:1.9;
+    font-size:19px;
 }
 
 .about-content strong{
@@ -895,8 +896,8 @@ RESPONSIVE
 
 .about-wrapper{
     display:grid;
-    grid-template-columns:1.3fr 1fr;
-    gap:60px;
+    grid-template-columns:55% 45%;
+    gap:50px;
     align-items:center;
 }
 
