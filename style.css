@@ -1722,6 +1722,79 @@ body.light-mode .certificate-card{
 #experience{
     padding:100px 8%;
 }
+/* ===========================
+      EXPERIENCE ICON
+=========================== */
+
+.experience-icon{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-size:30px;
+
+    box-shadow:0 15px 35px rgba(124,58,237,.25);
+
+}
+/* ===========================
+      EXPERIENCE TECHNOLOGIES
+=========================== */
+
+.experience-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+
+.experience-tech span{
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:rgba(124,58,237,.12);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.experience-tech span:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
 
 .experience-container{
     display:flex;
