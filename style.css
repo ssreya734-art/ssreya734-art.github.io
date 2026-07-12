@@ -1528,39 +1528,7 @@ RESPONSIVE
 
 }
 
-.section-heading h2{
 
-    font-size:48px;
-
-    font-weight:800;
-
-    color:var(--text);
-
-    position:relative;
-
-}
-
-.section-heading h2::after{
-
-    content:"";
-
-    width:80px;
-
-    height:4px;
-
-    background:linear-gradient(90deg,var(--primary),var(--secondary));
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:-18px;
-
-    transform:translateX(-50%);
-
-    border-radius:20px;
-
-}
 
 .skills-wrapper{
 
