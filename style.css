@@ -1125,42 +1125,47 @@ opacity:0;
 =========================================*/
 
 #about{
-    padding:70px 8% 100px;
+
+    padding:70px 8%;
 }
+
 
 .section-heading{
     margin-bottom:45px;
 }
 
+.section-heading{
+    margin-bottom:50px;
+}
+
 .section-heading span{
-    display:inline-block;
-    color:var(--secondary);
-    font-size:14px;
-    letter-spacing:4px;
+    display:block;
+    color:#7C3AED;
+    font-size:15px;
     font-weight:700;
+    letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:10px;
 }
 
 .section-heading h2{
-    font-size:48px;
-    font-weight:800;
+    font-size:54px;
+    margin-top:8px;
     color:var(--text);
     position:relative;
     display:inline-block;
-    margin:0;
-    padding-bottom:18px;
 }
 
 .section-heading h2::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:0;
-    width:90px;
+    bottom:-18px;
+
+    width:75px;
     height:4px;
-    border-radius:50px;
-    background:linear-gradient(90deg,var(--primary),var(--secondary));
+
+    background:linear-gradient(90deg,#7C3AED,#38BDF8);
+    border-radius:20px;
 }
 
 /*=============================*/
@@ -1198,9 +1203,9 @@ opacity:0;
 
 .about-wrapper{
     display:grid;
-    grid-template-columns:1.8fr 1fr;
-    gap:40px;
-    align-items:stretch;
+    grid-template-columns:1.3fr 1fr;
+    gap:60px;
+    align-items:center;
 }
 
 /*=============================*/
@@ -1228,44 +1233,79 @@ RIGHT CARD
 =============================*/
 
 .stats-box{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:25px;
+
+    background:#fff;
+
+    border-radius:28px;
+
     padding:35px;
 
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
 
+    gap:0;
+
     overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
 }
 
 .stat-item{
-    text-align:center;
-    padding:25px 15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:28px;
+
+    border:1px solid #eee;
+
 }
 
-.stat-item:nth-child(1),
+.stat-item:nth-child(1){
+    border-top:none;
+    border-left:none;
+}
+
 .stat-item:nth-child(2){
-    border-bottom:1px solid var(--border);
+    border-top:none;
+    border-right:none;
 }
 
-.stat-item:nth-child(1),
 .stat-item:nth-child(3){
-    border-right:1px solid var(--border);
+    border-bottom:none;
+    border-left:none;
+}
+
+.stat-item:nth-child(4){
+    border-bottom:none;
+    border-right:none;
 }
 
 .section-icon{
-    width:80px;
-    height:80px;
-    border-radius:22px;
-    margin:0 auto 18px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    font-size:30px;
-    color:#fff;
+    color:white;
+
+    font-size:26px;
+
+    flex-shrink:0;
+
 }
 
 .education{
@@ -1285,15 +1325,23 @@ RIGHT CARD
 }
 
 .stat-item h3{
+
     font-size:38px;
-    color:var(--secondary);
-    margin-bottom:8px;
+
+    color:#6D4AFF;
+
+    margin-bottom:5px;
+
 }
 
 .stat-item p{
-    color:var(--text-light);
-    font-size:18px;
-    font-weight:600;
+
+    color:#666;
+
+    font-size:17px;
+
+    font-weight:500;
+
 }
 
 /*=============================
