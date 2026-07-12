@@ -2549,6 +2549,25 @@ RESPONSIVE
     }
 
 }
+.hero-image img{
+    width:280px;
+    height:280px;
+}
+
+.hero-image::before{
+    width:320px;
+    height:320px;
+}
+
+.hero-image::after{
+    width:290px;
+    height:290px;
+}
+
+.image-bg{
+    width:330px;
+    height:330px;
+}
 
 /* ===============================
    MOBILE (768px)
@@ -2556,8 +2575,13 @@ RESPONSIVE
 
 @media (max-width:768px){
 
+      .menu-toggle{
+        display:block;
+    }
+
+   
     nav{
-        padding:14px 20px;
+        position:relative;
     }
 
     .logo{
@@ -2565,25 +2589,26 @@ RESPONSIVE
     }
 
     /* Hide desktop menu */
-    nav ul{
+ nav ul{
         position:absolute;
         top:100%;
         left:0;
         width:100%;
+
         background:var(--card);
 
         flex-direction:column;
-        align-items:center;
         gap:25px;
 
-        padding:30px 0;
+        padding:25px 0;
 
-        display:flex;
+        display:none;
 
         border-radius:0 0 20px 20px;
 
         box-shadow:0 15px 30px rgba(0,0,0,.25);
     }
+
 
     /* Show menu when active */
     nav ul.active{
@@ -2599,7 +2624,7 @@ RESPONSIVE
     }
 
     /* Keep theme button */
-    .theme-toggle{
+    #theme-toggle{
         width:48px;
         height:48px;
     }
