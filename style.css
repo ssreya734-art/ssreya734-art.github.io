@@ -160,6 +160,7 @@ SECTION HEADING
 
 .section-heading{
     margin-bottom:60px;
+    text-align:left;
 }
 
 
@@ -186,15 +187,13 @@ SECTION HEADING
 .section-heading h2::after{
     content:"";
     position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+    left:0;
     bottom:0;
     width:80px;
     height:4px;
     border-radius:50px;
     background:linear-gradient(90deg,var(--primary),var(--secondary));
 }
-
 /*=============================
 SECTION TAG
 =============================*/
