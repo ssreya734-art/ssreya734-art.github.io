@@ -786,7 +786,7 @@ RIGHT CARD
     overflow:hidden;
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.10);
 }
 
 .stat-item{
@@ -794,6 +794,7 @@ RIGHT CARD
     align-items:center;
     gap:18px;
     padding:30px;
+    min-height:150px;
     transition:.3s;
 }
 
@@ -817,14 +818,15 @@ RIGHT CARD
 }
 
 .stat-item h3{
-    font-size:34px;
-    color:var(--primary);
-    margin-bottom:6px;
+    font-size:36px;
+    font-weight:800;
+    color:var(--text);
+    margin-bottom:4px;
 }
 
 .stat-item p{
-    color:var(--paragraph);
     font-size:16px;
+    color:var(--paragraph);
     font-weight:500;
 }
 
