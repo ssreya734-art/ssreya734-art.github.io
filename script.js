@@ -115,9 +115,9 @@ const topBtn = document.getElementById("topBtn");
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 300) {
-        topBtn.style.display = "block";
+        topBtn.classList.add("show");
     } else {
-        topBtn.style.display = "none";
+        topBtn.classList.remove("show");
     }
 
 });

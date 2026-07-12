@@ -2396,6 +2396,66 @@ body.light-mode footer{
     background:#fff;
 
 }
+/*==============================
+    SCROLL TO TOP BUTTON
+==============================*/
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+    font-size:22px;
+
+    box-shadow:0 15px 35px rgba(124,58,237,.35);
+
+    z-index:9999;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+}
+
+/* Show button */
+
+#topBtn.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+/* Hover */
+
+#topBtn:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+    box-shadow:0 20px 45px rgba(124,58,237,.45);
+
+}
 
 /*=============================
 RESPONSIVE
