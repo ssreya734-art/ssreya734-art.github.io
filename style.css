@@ -2556,95 +2556,55 @@ RESPONSIVE
 
 @media (max-width:768px){
 
-    section{
-        padding:70px 6%;
-    }
-
-    /* NAVBAR */
-
     nav{
-        width:95%;
-        padding:12px 18px;
+        padding:14px 20px;
     }
 
     .logo{
         font-size:2rem;
     }
 
-    #theme-toggle{
+    /* Hide desktop menu */
+    nav ul{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:var(--card);
+
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+
+        padding:30px 0;
+
+        display:flex;
+
+        border-radius:0 0 20px 20px;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.25);
+    }
+
+    /* Show menu when active */
+    nav ul.active{
+        display:flex;
+    }
+
+    /* Show hamburger */
+    .menu-toggle{
+        display:none;
+        font-size:30px;
+        cursor:pointer;
+        color:var(--primary);
+    }
+
+    /* Keep theme button */
+    .theme-toggle{
         width:48px;
         height:48px;
     }
 
-    /* HERO */
-
-    #home{
-        flex-direction:column;
-        text-align:center;
-        padding-top:130px;
-        gap:45px;
-    }
-
-    .hero-text{
-        order:2;
-    }
-
-    .hero-image{
-        order:1;
-    }
-
-    .hero-image img{
-        width:220px;
-        height:220px;
-        border-width:6px;
-    }
-
-    .hero-image::before{
-        width:270px;
-        height:270px;
-    }
-
-    .hero-image::after{
-        width:245px;
-        height:245px;
-    }
-
-    .image-bg{
-        width:300px;
-        height:300px;
-    }
-
-    .hero-text h1{
-        font-size:42px;
-    }
-
-    .hero-text h3{
-        font-size:24px;
-        line-height:1.4;
-    }
-
-    .intro{
-        font-size:17px;
-        line-height:1.9;
-    }
-
-    .buttons{
-        flex-direction:column;
-        gap:18px;
-    }
-
-    .btn,
-    .btn2{
-        width:250px;
-    }
-
-    .hero-social{
-        justify-content:center;
-        margin-top:25px;
-    }
-
 }
-
 /* Small Mobile */
 
 @media (max-width:480px){

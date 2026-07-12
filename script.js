@@ -39,15 +39,13 @@ hiddenElements.forEach((element) => {
 // Mobile Menu
 // ===========================
 
-const menuToggle = document.getElementById("menu-toggle");
-
-const navLinks = document.getElementById("nav-links");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", () => {
-
     navLinks.classList.toggle("active");
-
 });
+
 
 document.querySelectorAll("#nav-links a").forEach(link => {
 
