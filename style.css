@@ -1269,19 +1269,19 @@ RIGHT CARD
 }
 
 .education{
-    background:linear-gradient(135deg,#8B5CF6,#6366F1);
+    background:linear-gradient(135deg,#7C3AED,#8B5CF6);   /* Purple */
 }
 
 .projects{
-    background:linear-gradient(135deg,#6366F1,#38BDF8);
+    background:linear-gradient(135deg,#2563EB,#38BDF8);   /* Blue */
 }
 
 .certificates{
-    background:linear-gradient(135deg,#8B5CF6,#6366F1);
+    background:linear-gradient(135deg,#059669,#34D399);   /* Green */
 }
 
 .experience{
-    background:linear-gradient(135deg,#6366F1,#38BDF8);
+    background:linear-gradient(135deg,#EA580C,#F59E0B);   /* Orange */
 }
 
 .stat-item h3{
