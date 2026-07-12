@@ -779,14 +779,13 @@ RIGHT CARD
 =============================*/
 
 .stats-box{
-    background: var(--card);
+    background:var(--card);
     border:1px solid var(--border);
     border-radius:30px;
-    padding:22px;
+    padding:20px;
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-    box-shadow:0 18px 45px rgba(0,0,0,.08);
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
 }
 
 .stat-item{
@@ -794,7 +793,8 @@ RIGHT CARD
     border:1px solid rgba(124,58,237,.08);
     border-radius:20px;
     padding:22px;
-
+    width:100%;
+    min-width:0;
     display:flex;
     align-items:center;
     gap:18px;
@@ -830,7 +830,7 @@ RIGHT CARD
 
 .stat-item p{
     color:var(--text-light);
-    font-size:17px;
+    font-size:16px;
     font-weight:600;
 }
 
@@ -1074,7 +1074,7 @@ RESPONSIVE
     padding:100px 8%;
 }
 
-.projects-grid{
+.project-grid{
     margin-top:60px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -1739,7 +1739,7 @@ footer{
 
 @media (max-width:1200px){
 
-    .projects-grid{
+    .project-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
@@ -1884,7 +1884,7 @@ footer{
         width:220px;
     }
 
-    .projects-grid{
+    .project-grid{
         grid-template-columns:1fr;
     }
 
