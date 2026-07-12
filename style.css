@@ -1069,31 +1069,28 @@ RESPONSIVE
         SKILLS SECTION
 =========================== */
 
-
 .skills-grid{
 
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
     gap:30px;
     margin-top:40px;
 
 }
 
 
-/* LEFT SKILLS CARD + RIGHT TECHNOLOGY CARD */
-
 .skills-column,
 .technology-card{
 
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.12);
+    background:var(--card);
+    border:1px solid var(--border);
 
     border-radius:20px;
     padding:30px;
 
     backdrop-filter:blur(12px);
 
-    transition:0.3s ease;
+    transition:.35s;
 
 }
 
@@ -1101,7 +1098,7 @@ RESPONSIVE
 .skills-column:hover,
 .technology-card:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 
 }
 
@@ -1123,7 +1120,7 @@ RESPONSIVE
 .card-title i{
 
     font-size:25px;
-    color:#00f5d4;
+    color:var(--secondary);
 
 }
 
@@ -1131,14 +1128,13 @@ RESPONSIVE
 .card-title h3{
 
     font-size:22px;
-    font-weight:600;
-
+    color:var(--text);
 }
 
 
 
 /* ===========================
-        SKILL BARS
+        SKILL BAR
 =========================== */
 
 
@@ -1161,6 +1157,7 @@ RESPONSIVE
 
 .skill-info span:first-child{
 
+    color:var(--text);
     font-size:16px;
     font-weight:500;
 
@@ -1169,21 +1166,18 @@ RESPONSIVE
 
 .skill-info span:last-child{
 
-    color:#00f5d4;
-    font-weight:600;
+    color:var(--secondary);
+    font-weight:700;
 
 }
 
-
-
-/* Background bar */
 
 .progress{
 
     height:10px;
     width:100%;
 
-    background:#222;
+    background:var(--card2);
 
     border-radius:20px;
 
@@ -1191,9 +1185,6 @@ RESPONSIVE
 
 }
 
-
-
-/* Filled bar */
 
 .progress-bar{
 
@@ -1203,30 +1194,16 @@ RESPONSIVE
 
     background:linear-gradient(
         90deg,
-        #00f5d4,
-        #00bbf9
+        var(--primary),
+        var(--secondary)
     );
-
-    animation:loadSkill 1.5s ease;
-
-}
-
-
-
-@keyframes loadSkill{
-
-    from{
-
-        width:0;
-
-    }
 
 }
 
 
 
 /* ===========================
-     TECHNOLOGY ICON GRID
+    TECHNOLOGY ICON GRID
 =========================== */
 
 
@@ -1241,14 +1218,16 @@ RESPONSIVE
 }
 
 
-
 .tech-box{
 
     height:100px;
 
-    background:rgba(255,255,255,0.06);
+    background:var(--card2);
+
+    border:1px solid var(--border);
 
     border-radius:15px;
+
 
     display:flex;
 
@@ -1258,12 +1237,12 @@ RESPONSIVE
 
     align-items:center;
 
+
     gap:10px;
 
-    transition:0.3s ease;
+    transition:.35s;
 
 }
-
 
 
 .tech-box i{
@@ -1275,8 +1254,11 @@ RESPONSIVE
 
 .tech-box span{
 
+    color:var(--text);
+
     font-size:14px;
-    color:#ddd;
+
+    font-weight:500;
 
 }
 
@@ -1286,7 +1268,7 @@ RESPONSIVE
 
     transform:translateY(-8px);
 
-    border:1px solid #00f5d4;
+    border-color:var(--secondary);
 
 }
 
@@ -1305,7 +1287,7 @@ RESPONSIVE
 
     border-radius:15px;
 
-    background:rgba(0,245,212,0.08);
+    background:rgba(56,189,248,.10);
 
     display:flex;
 
@@ -1316,18 +1298,23 @@ RESPONSIVE
 }
 
 
+.learning-box p{
+
+    color:var(--text-light);
+
+}
+
+
 .learning-box i{
 
-    color:#00f5d4;
-
-    font-size:20px;
+    color:var(--secondary);
 
 }
 
 
 
 /* ===========================
-        MOBILE VIEW
+        RESPONSIVE
 =========================== */
 
 
@@ -1339,7 +1326,6 @@ RESPONSIVE
 
     }
 
-
 }
 
 
@@ -1350,69 +1336,6 @@ RESPONSIVE
         grid-template-columns:repeat(2,1fr);
 
     }
-
-
-    .skills-column,
-    .technology-card{
-
-        padding:20px;
-
-    }
-
-}
-
-/* ===========================
-      LIGHT MODE FIX
-=========================== */
-
-body.light-mode .tech-box span{
-
-    color:#222;
-
-}
-
-
-body.light-mode .tech-box{
-
-    background:rgba(0,0,0,0.05);
-
-}
-
-
-body.light-mode .technology-card,
-body.light-mode .skills-column{
-
-    background:#ffffff;
-
-    border:1px solid rgba(0,0,0,0.1);
-
-}
-
-
-body.light-mode .card-title h3{
-
-    color:#222;
-
-}
-
-
-body.light-mode .skill-info span:first-child{
-
-    color:#222;
-
-}
-
-
-body.light-mode .progress{
-
-    background:#ddd;
-
-}
-
-
-body.light-mode .learning-box p{
-
-    color:#333;
 
 }
 
@@ -2238,9 +2161,9 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .technology-grid{
+    /* .technology-grid{
         grid-template-columns:1fr;
-    }
+    } */
 
     .project-buttons{
         flex-direction:column;
