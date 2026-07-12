@@ -1374,7 +1374,7 @@ RESPONSIVE
 
 .project-image{
     position:relative;
-    overflow:hidden;
+    overflow:visible;
 }
 
 .project-image img{
