@@ -274,11 +274,9 @@ nav{
     max-width:1280px;
 
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    gap:32px;
 
-    padding:12px 30px;
+    padding:12px 22px;
 
     background:rgba(17,24,39,.82);
     backdrop-filter:blur(20px);
@@ -287,9 +285,16 @@ nav{
     border:1px solid rgba(255,255,255,.08);
     border-radius:18px;
 
-    box-shadow:0 10px 40px rgba(0,0,0,.35);
+    gap:20px;
 
-    transition:.35s ease;
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
 }
 
 /*=============================
@@ -307,11 +312,12 @@ LOGO
 =============================*/
 
 .logo{
-    font-size:2.2rem;
+    font-size:1.9rem;
     font-weight:800;
     color:var(--primary);
     cursor:pointer;
     transition:.3s;
+    flex-shrink:0;
 }
 
 .logo:hover{
@@ -325,8 +331,14 @@ NAV LINKS
 nav ul{
     display:flex;
     align-items:center;
-    gap:42px;
+
+    flex:1;
+
+    gap:18px;
+
     list-style:none;
+
+    white-space:nowrap;
 }
 
 nav ul li{
@@ -334,12 +346,9 @@ nav ul li{
 }
 
 nav ul li a{
-    position:relative;
-    text-decoration:none;
-    color:var(--text);
-    font-size:16px;
+    font-size:15px;
     font-weight:600;
-    transition:.35s;
+    white-space:nowrap;
 }
 
 /* Underline */
@@ -397,6 +406,8 @@ THEME BUTTON
     );
 
     transition:.35s;
+    flex-shrink:0;
+
 }
 
 #theme-toggle:hover{
