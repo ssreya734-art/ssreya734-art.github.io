@@ -2547,9 +2547,7 @@ RESPONSIVE
     .timeline-dot{
         left:0;
     }
-
-}
-.hero-image img{
+    .hero-image img{
     width:280px;
     height:280px;
 }
@@ -2569,67 +2567,66 @@ RESPONSIVE
     height:330px;
 }
 
+}
+
+
 /* ===============================
    MOBILE (768px)
 ================================*/
-
 @media (max-width:768px){
 
-      .menu-toggle{
-        display:block;
-    }
-
-   
     nav{
         position:relative;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:14px 20px;
     }
 
     .logo{
         font-size:2rem;
     }
 
-    /* Hide desktop menu */
- nav ul{
+    /* Hamburger */
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+        color:var(--primary);
+        order:2;
+        margin-left:auto;
+    }
+
+    /* Theme Button */
+    #theme-toggle{
+        width:45px;
+        height:45px;
+        margin-left:12px;
+        order:3;
+    }
+
+    /* Mobile Menu */
+    nav ul{
         position:absolute;
         top:100%;
         left:0;
         width:100%;
-
-        background:var(--card);
-
-        flex-direction:column;
-        gap:25px;
-
-        padding:25px 0;
-
         display:none;
-
+        flex-direction:column;
+        gap:20px;
+        padding:25px 0;
+        background:var(--card);
         border-radius:0 0 20px 20px;
-
         box-shadow:0 15px 30px rgba(0,0,0,.25);
     }
 
-
-    /* Show menu when active */
     nav ul.active{
         display:flex;
     }
 
-    /* Show hamburger */
-    .menu-toggle{
-        display:none;
-        font-size:30px;
-        cursor:pointer;
-        color:var(--primary);
-    }
-
-    /* Keep theme button */
-    #theme-toggle{
-        width:48px;
-        height:48px;
-    }
-
 }
+
+
 /* Small Mobile */
 
 @media (max-width:480px){
