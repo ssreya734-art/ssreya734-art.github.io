@@ -423,25 +423,25 @@ body.light-mode nav{
 }
 
 #home{
-    animation: heroFade 1s ease forwards;
+    animation:heroFade 1s ease forwards;
+
     min-height:calc(100vh - 20px);
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     gap:60px;
+
     padding-top:180px;
+
     position:relative;
-    overflow:hidden;
-}
-#home::before{
-    content:"";
-    position:absolute;
-    inset:0;
 
-    background:transparent;   /* keeps your dark theme */
+    overflow:visible;
 
-    z-index:-1;
+    isolation:isolate;
 }
+/*  */
 
 @keyframes heroFade{
     from{
@@ -461,6 +461,10 @@ LEFT SIDE
 .hero-text{
     flex:1;
     max-width:650px;
+
+    position:relative;
+    z-index:20;
+
     animation:fadeLeft 1s ease;
 }
 
@@ -627,6 +631,8 @@ RIGHT SIDE
 
     position:relative;
 
+    z-index:10;
+
     animation:fadeRight 1.2s ease;
 }
 
@@ -641,15 +647,18 @@ RIGHT SIDE
 
     background:radial-gradient(
         circle,
-        rgba(124,58,237,.18),
-        rgba(56,189,248,.08),
+        rgba(124,58,237,.15),
+        rgba(56,189,248,.06),
         transparent 70%
     );
 
-    filter:blur(35px);
+    filter:blur(40px);
+
+    z-index:-2;
 
     animation:pulse 5s infinite;
 }
+
 /* Outer Ring */
 
 .hero-image::before{
@@ -665,6 +674,7 @@ RIGHT SIDE
     border:2px solid rgba(56,189,248,.18);
 
     animation:rotateRing 18s linear infinite;
+    z-index:-1;
 }
 
 /* Inner Ring */
@@ -682,6 +692,7 @@ RIGHT SIDE
     border:2px dashed rgba(124,58,237,.18);
 
     animation:rotateRingReverse 22s linear infinite;
+    z-index:-1;
 }
 
 /* Profile */
@@ -696,7 +707,7 @@ RIGHT SIDE
     border:8px solid #fff;
 
     position:relative;
-    z-index:5;
+    z-index:30;
 
     box-shadow:
         0 20px 60px rgba(0,0,0,.18),
