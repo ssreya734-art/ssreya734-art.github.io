@@ -2699,13 +2699,3 @@ RESPONSIVE
     opacity:1;
     transform:translateY(0);
 }
-
-/* Left Animation */
-.from-left{
-    transform:translateX(-80px);
-}
-
-/* Right Animation */
-.from-right{
-    transform:translateX(80px);
-}
