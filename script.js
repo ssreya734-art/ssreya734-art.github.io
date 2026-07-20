@@ -22,17 +22,18 @@ const observer = new IntersectionObserver((entries) => {
 
             entry.target.classList.add("show");
 
+            // Stop observing after first animation
+            observer.unobserve(entry.target);
         }
 
     });
 
+},{
+    threshold:0.2
 });
 
-
-hiddenElements.forEach((element) => {
-
+hiddenElements.forEach((element)=>{
     observer.observe(element);
-
 });
 
 // ===========================
