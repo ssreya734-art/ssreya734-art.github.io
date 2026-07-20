@@ -271,7 +271,8 @@ header{
 
 nav{
     width:92%;
-    max-width:1280px;
+    max-width:1100px;
+    padding:0 20px;
 
     position:relative;
     display:flex;
@@ -313,7 +314,7 @@ LOGO
 
     height:78px;
 
-    font-size:2rem;
+    font-size:1.8rem;
     font-weight:800;
 
     color:var(--primary);
@@ -340,7 +341,7 @@ nav ul{
     margin:0;
     padding:0;
 
-    gap:35px;
+    gap:20px;
 
     height:100%;
 }
@@ -360,7 +361,7 @@ nav ul li a{
 
     color:var(--text);
 
-    font-size:17px;
+    font-size:15px;
     font-weight:600;
 
     position:relative;
@@ -390,8 +391,8 @@ nav ul li a.active::after{
 THEME BUTTON
 =============================*/
 #theme-toggle{
-    width:46px;
-    height:46px;
+    width:42px;
+    height:42px;
 
     display:flex;
     align-items:center;
