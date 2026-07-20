@@ -275,20 +275,19 @@ nav{
 
     display:flex;
     align-items:center;
+    justify-content:space-between;
 
-    padding:12px 22px;
+    height:78px;
 
-    background:rgba(17,24,39,.82);
+    padding:0 30px;
+
+    background:rgba(255,255,255,.88);
     backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid var(--border);
     border-radius:18px;
 
-    gap:20px;
-
-
-    scrollbar-width:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 
@@ -307,12 +306,18 @@ LOGO
 =============================*/
 
 .logo{
-    font-size:1.9rem;
+    display:flex;
+    align-items:center;
+
+    height:78px;
+
+    font-size:2rem;
     font-weight:800;
+
     color:var(--primary);
-    cursor:pointer;
+
+    text-decoration:none;
     transition:.3s;
-    flex-shrink:0;
 }
 
 .logo:hover{
@@ -326,14 +331,16 @@ NAV LINKS
 nav ul{
     display:flex;
     align-items:center;
-
-    flex:1;
-
-    gap:18px;
+    justify-content:center;
 
     list-style:none;
 
-    white-space:nowrap;
+    margin:0;
+    padding:0;
+
+    gap:35px;
+
+    height:100%;
 }
 
 nav ul li{
@@ -341,31 +348,30 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    height:78px;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-size:17px;
     font-weight:600;
-    white-space:nowrap;
+
+    position:relative;
 }
 
 /* Underline */
 
 nav ul li a::after{
-    content:"";
-    position:absolute;
+    bottom:12px;
     left:0;
-    bottom:-10px;
 
     width:0;
     height:3px;
-
-    border-radius:30px;
-
-    background:linear-gradient(
-        90deg,
-        var(--primary),
-        var(--secondary)
-    );
-
-    transition:.35s;
 }
 
 nav ul li a:hover,
@@ -381,33 +387,29 @@ nav ul li a.active::after{
 /*=============================
 THEME BUTTON
 =============================*/
-
 #theme-toggle{
-    width:50px;
-    height:50px;
+    width:46px;
+    height:46px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
     border:none;
-    border-radius:16px;
+    border-radius:14px;
 
     cursor:pointer;
 
     font-size:20px;
     color:#fff;
 
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary)
-    );
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
-    transition:.35s;
-    flex-shrink:0;
-
+    transition:.3s;
 }
 
 #theme-toggle:hover{
     transform:translateY(-3px);
-    box-shadow:0 12px 28px rgba(124,58,237,.35);
 }
 
 /*=============================
