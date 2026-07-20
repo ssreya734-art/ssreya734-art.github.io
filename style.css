@@ -2586,11 +2586,15 @@ RESPONSIVE
 /* ===============================
    MOBILE (768px)
 ================================*/
-@media screen and (max-width:768px){
+@media (max-width:768px){
 
     nav{
         position:relative;
-        padding:15px 20px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:80px;
+        padding:0 20px;
     }
 
     .menu-toggle{
@@ -2600,39 +2604,37 @@ RESPONSIVE
         color:var(--primary);
     }
 
-    nav ul{
-
+    /* Hide menu by default */
+    #nav-links{
+        display:none;
         position:absolute;
-
         top:100%;
         left:0;
-
         width:100%;
-
-        display:none !important;
-
         flex-direction:column;
-
         align-items:center;
-
         gap:20px;
-
         padding:25px 0;
-
         background:var(--card);
-
         border-radius:0 0 20px 20px;
-
         z-index:999;
-
     }
 
-    nav ul.active{
-
-        display:flex !important;
-
+    /* Show when active */
+    #nav-links.active{
+        display:flex;
     }
 
+    #nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    #nav-links li a{
+        display:block;
+        padding:12px 0;
+        height:auto;
+    }
 }
 
 /* Small Mobile */
