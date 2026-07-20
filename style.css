@@ -430,7 +430,19 @@ body.light-mode nav{
     align-items:center;
     gap:60px;
     padding-top:180px;
+    position:relative;
+    overflow:hidden;
 }
+#home::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:transparent;   /* keeps your dark theme */
+
+    z-index:-1;
+}
+
 @keyframes heroFade{
     from{
         opacity:0;
