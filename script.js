@@ -15,26 +15,23 @@ themeToggle.addEventListener("click", () => {
 const hiddenElements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {
-
     entries.forEach((entry) => {
 
-        if(entry.isIntersecting){
-
+        if (entry.isIntersecting) {
             entry.target.classList.add("show");
-
-            // Stop observing after first animation
-            observer.unobserve(entry.target);
+            observer.unobserve(entry.target); // Animate only once
         }
 
     });
-
 },{
-    threshold:0.2
+    threshold:0.15,
+    rootMargin:"0px 0px -80px 0px"
 });
 
-hiddenElements.forEach((element)=>{
-    observer.observe(element);
+document.querySelectorAll(".hidden").forEach((el)=>{
+    observer.observe(el);
 });
+
 
 // ===========================
 // Mobile Menu
