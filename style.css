@@ -631,27 +631,25 @@ RIGHT SIDE
 }
 
 /* Glow */
-
 .image-bg{
     position:absolute;
 
-    width:470px;
-    height:470px;
+    width:380px;
+    height:380px;
 
     border-radius:50%;
 
     background:radial-gradient(
         circle,
-        rgba(124,58,237,.45),
-        rgba(56,189,248,.18),
-        transparent
+        rgba(124,58,237,.18),
+        rgba(56,189,248,.08),
+        transparent 70%
     );
 
-    filter:blur(60px);
+    filter:blur(35px);
 
     animation:pulse 5s infinite;
 }
-
 /* Outer Ring */
 
 .hero-image::before{
