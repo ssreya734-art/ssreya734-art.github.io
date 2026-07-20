@@ -419,7 +419,7 @@ body.light-mode nav{
 
 #home{
     animation: heroFade 1s ease forwards;
-    min-height:78vh;
+    min-height:calc(100vh - 20px);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -2687,11 +2687,8 @@ RESPONSIVE
 
 .hidden{
     opacity:0;
-    transform:translateY(60px);
-
-    transition:
-        opacity .9s ease,
-        transform .9s ease;
+    transform:translateY(50px);
+    transition:opacity .8s ease, transform .8s ease;
 }
 
 .show{
